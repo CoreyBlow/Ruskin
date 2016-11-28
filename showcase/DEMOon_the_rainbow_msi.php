@@ -14,7 +14,7 @@
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 (function($){
-   
+ 
     $(document).ready(function(){
             $('[data-toggle="popover"]').popover(); 
     });
