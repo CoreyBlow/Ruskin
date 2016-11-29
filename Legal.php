@@ -1,14 +1,21 @@
-<?php
-$title = "Legal";
-$content = '
-
-<div class="title-apparatus">Legal</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples">
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset&#x003D;UTF-8">
+      <title>Legal</title><?php include("inactive.inc.php"); ?><link href="styles.css" rel="stylesheet" type="text/css">
+   </head>
+   
+   <?php include("navigation.inc.php"); ?>
+   
+   <div class="webpage">
+      
+      <div class="title-apparatus">Legal</div>
       
       <div id="" class="section">
          <span class="head-section"><i>Early Ruskin Manuscripts, 1826&#x2013;1842</i></span>
          
          <p>The <i>Early Ruskin Manuscripts, 1826&#x2013;1842</i> is a project of Southeastern Louisiana University
-                            and Humanities Online, both under the direction of the universitys Department of English.
+                            and Humanities Online, both under the direction of the university's Department of English.
          </p>
          
          <p>All commentary in <i>ERM</i>, including apparatuses, glosses, notes transcripts, and other editorial
@@ -50,11 +57,6 @@ $content = '
       
    </div>
    
-   ';
-
-
-
-
-
-include 'Template.php';
-?>
+   
+   
+</html>

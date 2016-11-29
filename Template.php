@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><?php echo $title; ?></title>
-        <link rel="stylesheet" type="text/css" href="Styles/Stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="Stylesheet.css" />
     </head>
     
     <body>
@@ -100,7 +100,7 @@
             
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="Indices.php">Indices</a></li>
+                <li><a href="Indices_1.php">Indices</a></li>
                 <br/><a class="subnavigation" href="Works.php">Works</a>
                 <br/><a class="subnavigation" href="Manuscripts.php">Manuscripts</a>
                 <br/><a class="subnavigation" href="Corpora.php">Corpora</a>
@@ -111,45 +111,7 @@
                 <li><a href="#">Bibliography</a></li>
                 <li><a href="Staff_and_Support.php">Staff and Support</a></li>
                 <li><a href="Legal.php">Legal</a></li>
-                <center> 
-                <table cellpadding="5" cellspacing="1" class="searchBox">
-                    <tbody>
-                        <tr>
-                            <td align="center">
-                                <form action="search.php" method="get">…</form>
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div align="left">
-                                                        <input type="text" name="query" id="query" size="20" value=" " 
-                                                               action="include/js_suggest/SearchPage.php" columns="2" autocomplete=
-                                                               "off" delay="1500">
-                                                        <br>
-                                                        <div id="querySuggestList" class="SuggestFramework_List" style=
-                                                             "position: absolute; z-index: 1; width: 309px; word-wrap: break-word;
-                                                             cursor: default; display: none;">
-                                                            <table class="SuggestFramework_Combo" cellspacing="0" cellpadding=
-                                                            "0">
-                                                                <tbody></tbody>
-                                                             </table>
-                                                        </div>
-                                                    </div>    
-                                                </td>        
-                                                <td>
-                                                    <input type="submit" value="Search">
-                                                </td>
-                                            </tr>    
-                                        </tbody>    
-                                    </table>     
-                                    <input type="hidden" name="search" value="1">
-                                </form>    
-                                
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </center>
+       
             </ul>
             
         </nav>

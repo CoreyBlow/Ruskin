@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples">
+   
+   <head>
+       
+
 <style>
 button.accordion {
     background-color: #eee;
@@ -45,95 +47,66 @@ div.panel.show {
     max-height: 10000px;
 }
 </style>
-
-</html>
-<?php
-
-$title = "Indices";
-$content = ' <h3></h3>
-         <br></br>
-       
-      <div id="WORKS" class="section">
-         
-            
-           <button class="accordion">Works</button>
+      <meta http-equiv="Content-Type" content="text/html; charset&#x003D;UTF-8">
+      <title>Indices</title><?php include('inactive.inc.php'); ?><link href="styles.css" rel="stylesheet" type="text/css">
+   </head>
+   
+   <?php include('navigation.inc.php'); ?>
+   
+   <div class="essay">
+      
+      <div class="title-apparatus">Indices</div>
+      <br></br>
+      <br></br>
+     
+      
+     <button class="accordion">Works</button>
 <div class="panel">
-  <p>   <p>In <i>ERM</i>, a <i>work</i> consists of a discrete text by Ruskin, 
+  <div id="WORKS" class="section">
+         <span class="head-section"></span>
+         
+         <p>In <i>ERM</i>, a <i>work</i> consists of a discrete text by Ruskin, 
                         as expressed in all available witnesses. The entry path to a work in the archive defaults to the work&#x02BC;s Apparatus Page, 
                         which organizes information about the work (e.g., about the work&#x02BC;s available witnesses and manuscript sources, title, genre, date, composition and publication history, 
                         and other discussion). The Apparatus Page also links to the work&#x02BC;s Text Pages, 
                         consisting of witness transcriptions (manuscript and print), corresponding facsimiles, and supporting annotation.
                     
          </p>
-            <br></br>
          
          <p>In the Works Indices, works are listed by the titles assigned to them according to rules in 
-                        <a href="../notes/title_citation_note.php">System of Title Citation for Works</a>. 
+                        <a href="../notes/title_citation_note.php" target="_blank">System of Title Citation for Works</a>. 
                         Titles in the indices include those for both single and composite texts&#x2014;the latter including, for example, a multipart travelogue, sermon series, 
                         poetry anthology, or scientific dictionary. If the individual parts of a composite text are themselves entitled, 
                         these titles are also listed in the Works Indices, but the link will take the reader to the Apparatus Page for the composite work.
                     
          </p>
-            <br></br>
          
          <p>The current Title Index is arranged alphabetically. Eventually, the archive will offer Title Indices that are arranged chronologically and topically.</p>
          
-            <br></br>
          
          <ul>
-            <button class="accordion">Works</button>
-<div class="panel">
-            <li><a href="account_of_a_tour_on_the_continent_apparatus.html">Account of a Tour on the Continent</a></li>
-            <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-  }
-}
-</script>
-
-  <button class="accordion">Works</button>
-<div class="panel">
-
-            <li><a href="../apparatuses/the_defiance_of_war_apparatus.html">&#x201C;The Defiance of War&#x201D;</a></li>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-  }
-}
-</script>
-
-
-            <li><a href="../apparatuses/glen_of_glenfarg_apparatus.php">&#x201C;Glen of Glenfarg&#x201D; &#x005B;&#x201C;Glen of Glenfarg thy beauteous rill&#x201D;&#x005D;</a></li>
             
-
-
-
-            <li><a href="../apparatuses/the_hill_of_kinnoul_apparatus.php">&#x201C;The Hill of Kinnoul&#x201D;</a></li>
+            <li><a href="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</a></li>
             
-            <li><a href="../apparatuses/lochleven_apparatus.php">&#x201C;Lochleven&#x201D;</a></li>
+            <li><a href="../apparatuses/the_defiance_of_war_apparatus.php" target="_blank">&#x201C;The Defiance of War&#x201D;</a></li>
             
-            <li><a href="../apparatuses/nature_apparatus.php">&#x201C;Nature&#x201D;</a></li>
+            <li><a href="../apparatuses/glen_of_glenfarg_apparatus.php" target="_blank">&#x201C;Glen of Glenfarg&#x201D; &#x005B;&#x201C;Glen of Glenfarg thy beauteous rill&#x201D;&#x005D;</a></li>
             
-            <li><a href="../apparatuses/the_needless_alarm_apparatus.php">&#x201C;The Needless Alarm&#x201D;</a></li>
+            <li><a href="../apparatuses/the_hill_of_kinnoul_apparatus.php" target="_blank">&#x201C;The Hill of Kinnoul&#x201D;</a></li>
             
-            <li><a href="../apparatuses/on_papas_leaving_home_apparatus.php">&#x201C;On Papa&#x02BC;s Leaving Home&#x201D;</a></li>
+            <li><a href="../apparatuses/lochleven_apparatus.php" target="_blank">&#x201C;Lochleven&#x201D;</a></li>
             
-            <li><a href="../apparatuses/on_scotland_apparatus.php">&#x201C;On Scotland&#x201D; &#x005B;&#x201C;Farewell to Scotland&#x201D;&#x005D;</a></li>
+            <li><a href="../apparatuses/nature_apparatus.php" target="_blank">&#x201C;Nature&#x201D;</a></li>
             
-            <li><a href="../apparatuses/on_the_rainbow_apparatus.php">&#x201C;On the Rainbow: In Blank Verse&#x201D;</a></li>
+            <li><a href="../apparatuses/the_needless_alarm_apparatus.php" target="_blank">&#x201C;The Needless Alarm&#x201D;</a></li>
             
-            <li><a href="../apparatuses/ragland_castle_apparatus.php">&#x201C;Ragland Castle&#x201D;</a></li>
+            <li><a href="../apparatuses/on_papas_leaving_home_apparatus.php" target="_blank">&#x201C;On Papa&#x02BC;s Leaving Home&#x201D;</a></li>
+            
+            <li><a href="../apparatuses/on_scotland_apparatus.php" target="_blank">&#x201C;On Scotland&#x201D; &#x005B;&#x201C;Farewell to Scotland&#x201D;&#x005D;</a></li>
+            
+            <li><a href="../apparatuses/on_the_rainbow_apparatus.php" target="_blank">&#x201C;On the Rainbow: In Blank Verse&#x201D;</a></li>
+            
+            <li><a href="../apparatuses/ragland_castle_apparatus.php" target="_blank">&#x201C;Ragland Castle&#x201D;</a></li>
             
             <li><a href="../apparatuses/saltzburg_apparatus.php" target="_blank">&#x201C;Saltzburg&#x201D;</a></li>
             
@@ -150,11 +123,14 @@ for (i = 0; i < acc.length; i++) {
             <li><a href="../apparatuses/wales_apparatus.php" target="_blank">&#x201C;Wales&#x201D;</a></li>
             
             <li><a href="../apparatuses/the_steam_engine_apparatus.php" target="_blank">&#x201C;When furious up from mines the water pours&#x201D; &#x005B;&#x201C;The Steam Engine&#x201D;&#x005D;</a></li>
-            <br></br>
+            
          </ul>
          
       </div>
-         </p>
+
+
+
+
 </div>
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -167,33 +143,31 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
+     
+           <br></br>
       
-         
-      <div id="MANUSCRIPTS" class="section">
-         
-            <br></br>
-                  <button class="accordion">Manuscripts</button>
+     <button class="accordion">Manuscripts</button>
 <div class="panel">
-  <p>Manuscripts are physical documents manifesting Ruskin&#x02BC;s texts&#x2014;that is, they consist of various physical witnesses of works. 
+<div id="MANUSCRIPTS" class="section">
+         <span class="head-section"></span>
+         
+         <p>Manuscripts are physical documents manifesting Ruskin&#x02BC;s texts&#x2014;that is, they consist of various physical witnesses of works. 
                         While many manuscripts manifest only a single witness of a single work, more typically a manuscript manifests many texts. 
                         The available manuscripts described and facsimilied in the archive are surveyed in 
                         <a href="../notes/overview_of_mss_note.php" target="_blank" class="inactive">Overview of the Manuscripts</a>.
                     
-         </p>   <br></br>
-         
+         </p>
          
          <p>The entry path to a manuscript in the archive defaults to its Apparatus Page, 
                         which organizes information about the manuscript (e.g., about the manuscript&#x02BC;s title, location, provenance, description, contents, date, 
                         and other discussion). The Contents section of the Apparatus Page, which lists the works contained in a manuscript, 
                         links to those works&#x02BC; Apparatus and Text Pages, including facsimiles.
                     </p>
-            <br></br>
          
          <p>In the Manuscripts Indices, manuscripts are listed by titles assigned to them according to rules explained in 
                         <a href="../notes/title_citation_for_major_mss_note.xml" target="_blank" class="inactive">System of Title Citation for Manuscripts</a>.
                     
          </p>
-            <br></br>
          
          <ul>
             
@@ -264,9 +238,13 @@ for (i = 0; i < acc.length; i++) {
             <li>Houghton</li>
             
          </ul>
-           
          
       </div>
+      
+
+
+
+
 </div>
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -279,20 +257,20 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
-         
+     
+           <br></br>
       
-      <div id="CORPORA" class="section">
-         
-            <br></br>
-                  <button class="accordion">Corpora</button>
+     <button class="accordion">Corpora</button>
 <div class="panel">
-<p>Ruskin often formed texts into groups, by compiling anthologies of texts or organizing texts into a single composite work. 
+ <div id="CORPORA" class="section">
+         <span class="head-section"></span>
+         
+         <p>Ruskin often formed texts into groups, by compiling anthologies of texts or organizing texts into a single composite work. 
                         In <i>ERM</i>, this kind of group is encoded as a <i>corpus</i>. Our aim in encoding and describing corpora is 
                         to express the forms taken by Ruskin&#x02BC;s anthologizing impulse, 
                         while complying with the TEI standards for XML 
                         (see <a href="../notes/editorial_rationale_note.php" target="_blank">Editorial and Encoding Rationale and Methodology</a>).
-               <br></br>
-                 
+                    
          </p>
          
          <p>Listed in the Corpora Index are titles of projects that Ruskin clearly developed as distinct corpora. The list includes titles that overlap with some 
@@ -301,15 +279,13 @@ for (i = 0; i < acc.length; i++) {
                         Indeed, in the encoding procedures of <i>ERM</i>, 
                         any major manuscript forms a kind of corpus, albeit a miscellaneous one, and can itself be made up of other corpora. Listed here, however, 
                         are manuscripts that Ruskin identified as distinct anthologies or composites.
-                 <br></br>
-               
+                    
          </p>
          
          <p>Titles of copora default to an Apparatus Page, which in some cases is identical to a Work Apparatus, but which in other cases such as anthologies assembles 
                         information unique to a collection (e.g., title, contents, date, organizing themes, and other discussion). The Apparatus Page links to the corpus witness, in some cases 
                         multiple witnesses or corpora, that constitute a version or versions of the collection.
                     </p>
-            <br></br>
          
          <ul>
             
@@ -324,8 +300,14 @@ for (i = 0; i < acc.length; i++) {
             <li>MS III Poetry Anthology 3</li>
             
          </ul>
-            <br></br>
          
+         
+         
+      </div>
+
+
+
+
 </div>
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -338,33 +320,33 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
-         
-         
-         
-      </div>
+     
+           <br></br>
       
-      <div id="WORKSBYOTHERS" class="section">
-         
-            <br></br>
-                  <button class="accordion">Works by Others</button>
+     <button class="accordion">Works by Others</button>
 <div class="panel">
-  
- <p>If, in the encoding of the early manuscripts, we discover an intervention by a writer other than <span class="persName-JR">Ruskin</span>
+ <div id="WORKSBYOTHERS" class="section">
+         <span class="head-section"></span>
+         
+         <p>If, in the encoding of the early manuscripts, we discover an intervention by a writer other than <span class="persName-JR">Ruskin</span>
                         or if we find that <span class="persName-JR">Ruskin</span> transcribed without substantially altering a text by another writer, we
                         encode and class these texts as <i>works by others</i>. Just as for works by <span class="persName-JR">Ruskin</span>, links default to an Apparatus
                         Page.
          </p>
-            <br></br>
          
          <ul>
             
             <li><a href="../apparatuses/mr_gloss_dating_msi_apparatus.php" target="_blank">Margaret Ruskin&#x02BC;s Gloss on the Dating of MS I</a></li>
             
             <li>&#x201C;The Sound of the Sea&#x201D; by Mrs. Hemans</li>
-               <br></br>
-         		
+            		
          </ul>
          
+      </div>
+
+
+
+
 </div>
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -377,20 +359,19 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
-        
-      </div>
+     
+           <br></br>
       
-      <div id="COMMENTARY" class="section">
-        
-            <br></br>
-                  <button class="accordion">Commentary</button>
+     <button class="accordion">Commentary</button>
 <div class="panel">
-  
-<p><i>ERM</i> supplies commentary in a number of forms, some of which can be accessed by indices. 
+
+ <div id="COMMENTARY" class="section">
+         <span class="head-section"></span>
+         
+         <p><i>ERM</i> supplies commentary in a number of forms, some of which can be accessed by indices. 
                         The Notes Indices list titles of topical notes that are free-standing and hyperlinked throughout the archive. 
                         The notes fall into the following categories:
-                   <br></br>
-                 
+                        
             <ul>
                
                <li>Bibliographical</li>
@@ -400,19 +381,15 @@ for (i = 0; i < acc.length; i++) {
                <li>Contextual</li>
                
             </ul>
-               <br></br>
-         
                         Currently, all notes are listed together alphabetically; eventually, the notes will also be subdivided into three topical lists.
-                       <br></br>
-         
+                    
          </p>
          
          <p>Other forms of commentary include <i>glosses</i> or editorial annotations that hang from specific passages in transcriptions of text witnesses. 
                         These annotations cannot be accessed through indices, because they are dependent on their context and lack a title that can be indexed. 
                         Besides being accessible via the texts they annotate, however, some of this commentary is also linked to related notes; and eventually 
                         their topics will be searchable in the archive by keyword.
-                       <br></br>
-         
+                    
          </p>
          
          <ul>
@@ -476,8 +453,11 @@ for (i = 0; i < acc.length; i++) {
             <li><a href="../notes/tours_of_1826-27_note.php" target="_blank">Tours of 1826&#x2013;27</a></li>
             
          </ul>
-            <br></br>
          
+      </div>
+
+
+
 </div>
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -490,23 +470,22 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
-         
-      </div>
+     
+           <br></br>
       
-      <div id="ESSAYS" class="section">
-         
-            <br></br>
-                  <button class="accordion">Essays</button>
+     <button class="accordion">Essays</button>
 <div class="panel">
-  
-<p>As an alternative to the indices, <i>essays</i> provide a pathway into the archive designed for readers who would benefit 
+
+      <div id="ESSAYS" class="section">
+         <span class="head-section"></span>
+         
+         <p>As an alternative to the indices, <i>essays</i> provide a pathway into the archive designed for readers who would benefit 
                         from a guided tour of the archive&#x02BC;s contents. The essays are topical surveys, which are richly hyperlinked to key works, manuscripts, and commentary. 
                         These discursive introductions are not meant to be exhaustive like the indices but to suggest significant points where a reader 
                         who is unfamiliar with the archive&#x02BC;s materials can gain a footing in selected topics. The topics planned for essays include:
                         
             <ul>
-                  <br></br>
-         
+               
                <li>Editing and Bibliography</li>
                
                <li>Education</li>
@@ -526,9 +505,9 @@ for (i = 0; i < acc.length; i++) {
                <li>Travel</li>
                
             </ul>
-            
-         </p>
-         
+
+
+
 
 </div>
 <script>
@@ -542,6 +521,17 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 </script>
+    
+      
+    <br></br>
+     
+      
+    
+      
+      
+      
+            
+         </p>
          
       </div>
       
@@ -549,11 +539,4 @@ for (i = 0; i < acc.length; i++) {
    
    
    
-</html>';
-
-
-
-
-
-include 'Template.php';
-?>
+</html>
