@@ -1,27 +1,410 @@
-<!DOCTYPE html>
-<?php
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples">
+   
+   <head>
+       <style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 9px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
 
-$title = "Account of a Tour on the Continent";
-$content = '<div id="top" class="title-apparatus">Account of a Tour on the Continent</div>	<hr/>
-    <head>
+button.accordion.active, button.accordion:hover {
+    background-color: #ccf;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 9px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 10000px;
+}
+</style>
+
       <meta http-equiv="Content-Type" content="text/html; charset&#x003D;UTF-8">
-      <title>Account of a Tour on the Continent</title>      <script type="text/javascript" src="../showcase/jquery.js"></script>
-      <script type="text/javascript">
-         $(document).ready(function(){
-			$(".inactive").css("color","#000");
-            $(".inactive").click(function(){
-				return false;
-			});
-         });
-      </script><link href="../styles.css" rel="stylesheet" type="text/css">
+      <title>Account of a Tour on the Continent</title><?php include("inactive.inc.php"); ?><link href="styles.css" rel="stylesheet" type="text/css">
    </head>
-   <div class="navigation-work">
-        <span><a class="content_subnavigation" href="#WITNESSES">Witnesses</a> | <a class="content_subnavigation" href="#TITLE">Title</a> | <a class="content_subnavigation" href="#GENRE">Genre</a> | <a class="content_subnavigation" href="#MAJORMS">Manuscripts</a> | <a class="content_subnavigation" href="#DATE">Date</a> | <a class="content_subnavigation" href="#COMPPUB">Composition and Publication</a> | <a class="content_subnavigation" href="#DISCUSSION">Discusssion</a> | <a class="content_subnavigation" href="#TEXTUALNOTE">Textual Note</a></span>
-    </div>
-    <br/>         
+   
+   
+   <body><?php include("navigation.inc.php"); ?>
+      
+      <div class="apparatus">
+         
+         <div id="top" class="title-apparatus">Account of a Tour on the Continent</div><?php include("navigation-work.inc.php"); ?>
+         
          <div id="WITNESSES" class="section">
-            			<h3>Witnesses</h3>
-            		<br></br>		
+            			<span class="head-section">Witnesses</span>
+                                <p><a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">Account of a Tour on the Continent (MS IA g1)</a></p>
+            			<button class="accordion">“Calais” [poem]</button>
+                                <div class="panel">
+                                 <div class="title"><span class="space" style="padding-left:6.4em"> </span><i><span class="caps">calais</span></i></div>
+   <span class="lg-stanza">
+      <span class="l">
+         <div class="add-margin-left-counterclockwise"><br/></div>The sands are in the sunlight sleeping
+         <div class="add-margin-right-counterclockwise"><br/></div></span><br/>
+      <span class="l">The ocean Barrier is beating</span><br/>
+      <span class="l">Again again forevermore</span><br/>
+      <span class="l">Haste the light curlings to the Shore</span><br/>
+      <span class="l"><span class="del-underline">And yet advance &#x0026; yet retreat</span><div class="add-above" style="left:NaNem">That from the sand the impression sweep</div>
+         <div class="linenumber-center-JR">5</div></span><br/>
+      <span class="l">O<span class="subst-del">n</span><span class="subst-add-overwriting">f</span> playful childhoods daring feet</span><br/>
+      <span class="l">That seeks within its sandy cell</span><br/>
+      <span class="l">The pebble bright or purple shell<span class="glosses"><a href="../glosses/calais_glosses.html#CALAISPOEMSHELL" target="_blank"" class="inactive">1</a></span></span><br/>
+      <span class="l">Far in its clear expanse l<span class="subst-del">ies</span><span class="subst-add-overwriting">ay</span> wide</span><br/>
+      <span class="l">Unruffledly that ocean tide
+         <div class="linenumber-center-JR">10</div></span><br/>
+      <span class="l">Stretching away where paler grew</span><br/>
+      <span class="l">The Heavens bright unclouded blue</span><br/>
+      <span class="l">And far away in distance dying</span><br/>
+      <span class="l">Old Englands <span class="unclear-">C</span>liffy coast is lying</span><br/>
+      <span class="l">And beautiful as summer cloud
+         <div class="linenumber-center-JR">15</div></span><br/>
+      <span class="l">By the low sun empurpled proud</span><br/>
+      <span class="l">Strange that a space from shore <div class="runover" style="left:12.4em">to shore</div></span><br/>
+      <span class="l">So soon so easily passed oer</span><br/>
+      <span class="l">Should yet a wide distinction place</span><br/>
+      <span class="l">Twixt Man &#x0026; Man twixt Race &#x0026; <div class="runover" style="left:11.2em">
+         <div class="linenumber-center-JR">20</div></div></span><br/>
+      <span class="l">Sudden &#x0026; marked the change you find</span><br/>
+      <span class="l">Religion Language even mind</span><br/>
+      <span class="l">That you might think that oceans <div class="runover" style="left:10.0em">span</div></span><br/>
+      <span class="l">Marked the varieties of Man</span><br/>
+      
+      </span>
+   
+                                </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+                                <button class="accordion">[“Cassel”] [poem]</button>
+                                <div class="panel">
+                                   <span class="lg-stanza">
+      <span class="l">The way was long &#x0026; yet twas sweet
+         <div class="linenumber-right-JR">25</div></span><br/>
+      <span class="l">Thro many a shady soft retreat</span><br/>
+      <span class="l">Where the broad willow semblance gave</span><br/>
+      <span class="l">of Weeping Beauty in the Wave</span><br/>
+      <span class="l">And Elm with massy foliage pressed</span><br/>
+      <span class="l">And feathery aspens quivering Crest<div class="add-margin-right">3<span class="supplied-">0</span></div></span><br/>
+      <span class="l">And many a spiry poplar glade</span><br/>
+      <span class="l">And Hazels rich Entangled shade</span><br/>
+      <span class="l">While onward as advancing still</span><br/>
+      <span class="l">From <span class="placeName-STOMER">Omers</span> plain<span class="glosses"><a href="../glosses/cassel_glosses.php#STOMERSPLAINGLOSS" target="_blank">1</a></span> to <span class="placeName-CASSEL">Cassell</span>s hill<span class="glosses"><a href="../glosses/cassel_glosses.php#CASSELLSHILLGLOSS" target="_blank">2</a></span></span><br/>
+      <span class="l">Far yet more far the Landscape threw</span><br/>
+      <span class="l">Its deep immeasurable Blue</span><br/>
+      <span class="l">Oh beautiful those plains were <div class="runover" style="left:8.8em">showing</div></span><br/>
+      <span class="l">Where Summers Sun was hotly glowing</span><br/>
+      <span class="l">Many a Battle field lay spread</span><br/>
+      <span class="l">Once the dark Dwelling of the Dead</span><br/>
+      <span class="l">But fruitful now their Champaigns<div class="runover" style="left:12.4em">wave</div></span><br/>
+      <span class="l">With bending Grain on soldiers Grave</span><br/>
+      <span class="l">While far beneath in long array</span><br/>
+      <span class="l">The priestly orders wound their way<span class="glosses"><a href="../glosses/cassel_glosses.php#PRIESTLYORDERSGLOSS" target="_blank">3</a></span></span><br/>
+      <span class="l">Heavy the massive banners rolled
+         <div class="linenumber-right-JR">45</div></span><br/>
+      <span class="l">Rich wrought with gems and stiff with gold</span><br/>
+      <span class="l">While as the cross came borne on high</span><br/>
+      <span class="l">Beneath its crimson canopy</span><br/>
+      <span class="l">Many the haughty head that bowed</span><br/>
+      <span class="l">Sunk his high crest the warrior proud
+         <div class="linenumber-right-JR">50</div></span><br/>
+      <span class="l"><span class="del-strikethrough">T</span> The priest his glance benignant cast</span><br/>
+      <div id="1038179r" class="pb"></div>
+      <span class="l">And murmured blessings as he past</span><br/>
+      <span class="l">While round the hillside echoing free</span><br/>
+      <span class="l">Rung the loud hymning melody.</span><br/>
+      <span class="l">Many a monkish voice was there
+         <div class="linenumber-right-JR">55</div></span><br/>
+      <span class="l">Many a trumpet rent the <span class="del-strikethrough">Aar</span> air</span><br/>
+      <span class="l">And softer, sweeter, yet the same</span><br/>
+      <span class="l">The sounds in failing cadence came.</span><br/>
+      <span class="l">No marvel, that the pomp and pride</span><br/>
+      <span class="l">Of <span class="placeName-ROME">Rome</span>s religion thus should hide
+         <div class="linenumber-right-JR">60</div></span><br/>
+      <span class="l">The serpent folds beneath that roll</span><br/>
+      <span class="l">The poison mantling in the bowl<span class="glosses"><a href="../glosses/cassel_glosses.php#NOMARVEL" target="_blank">4</a></span></span><br/>
+      </span>
+                                </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+                                <button class="accordion">“Lille” [poem]</button>
+                                <div class="panel">
+                                 <div class="title" style="text-align:center"><span class="space" style="padding-left:5.2em"> </span>Lille</div>
+   <div class="quarter"></div>
+   <span class="lg-stanza">
+      <span class="l">Oh red the blushing east awoke</span><br/>
+      <span class="l">And bright the morn on <span class="placeName-CASSEL">Cassel</span> broke</span><br/>
+      <span class="l">Along the green hillside we flew
+         <div class="linenumber-right-JR">65</div></span><br/>
+      <span class="l">Flashed the clear sunshine in the dew</span><br/>
+      <span class="l">That on the clustering herbage hung</span><br/>
+      <span class="l">That to the tangled copse wood clung</span><br/>
+      <span class="l">That shot like stars through every shade</span><br/>
+      <span class="l">And glanced on every <span class="del-strikethrough">noontide</span><div class="add-above" style="left:8.0em">wildwood</div>
+         <div class="linenumber-right-JR">70</div> glade</span><br/>
+      <span class="l">At length by many a wind descending</span><br/>
+      <span class="l">That ever to the plain were bending</span><br/>
+      <span class="l">Farther and farther still we pressed</span><br/>
+      <span class="l">From <span class="placeName-CASSEL">Cassel</span>s insulated<span class="glosses"><a href="../glosses/lille_glosses.php#INSULATEDGLOSS" target="_blank">1</a></span> crest</span><br/>
+      <span class="l">That back retiring fainter still
+         <div class="linenumber-right-JR">75</div></span><br/>
+      <span class="l">Showed the rich outlines of its hill</span><br/>
+      <span class="l">And faded in the purple haze</span><br/>
+      <span class="l">That spoke the coming noontide blaze</span><br/>
+      <span class="l">That noontide blaze delayed not long</span><br/>
+      <span class="l">On <span class="placeName-TOURNAI">Tournay</span>s towers<span class="glosses"><a href="../glosses/lille_glosses.php#TOURNAYSTOWERSGLOSS" target="_blank">2</a></span> twas fierce and strong
+         <div class="linenumber-right-JR">80</div></span><br/>
+      <span class="l">And ere we gained the middle way</span><br/>
+      <span class="l">The glow was like an <span class="del-strikethrough">U</span> Afric day</span><br/>
+      <span class="l">Full upon <span class="placeName-LILLE">Lille</span>s high ramparts round<span class="glosses"><a href="../glosses/lille_glosses.php#LILLESHIGHRAMPARTSGLOSS" target="_blank">3</a></span></span><br/>
+      <span class="l">On massive wall and moated mound</span><br/>
+      <span class="l">Shot the fierce sun his glaring ray
+         <div class="linenumber-right-JR">85</div></span><br/>
+      <span class="l">As bent we on our burning way</span><br/>
+      <span class="l">Till past the narrow drawbridge length</span><br/>
+      <span class="l">The massive gates portcullised strength</span><br/>
+      <span class="l">And moat whose waves found steepy shore<span class="glosses"><a href="../glosses/lille_glosses.php#LILLESTEEPYSHORE" target="_blank">4</a></span></span><br/>
+      <span class="l">Where forward <span class="del-strikethrough">high</span> <div class="add-below" style="left:5.6em">huge</div> the bastion bore<span class="glosses"><a href="../glosses/lille_glosses.php#LILLEHUGE" target="_blank">5</a></span><div class="linenumber-right-JR">90</div></span><br/>
+      <div id="MSIASheet24" class="pb"></div>
+      <span class="l">And where the sentinels were set</span><br/>
+      <span class="l">High on the dizzy parapet</span><br/>
+      <span class="l">Till the last portals echoes woke</span><br/>
+      <span class="l">And <span class="placeName-LILLE">Lille</span> <span class="del">in all it</span> upon us sudden broke</span><br/>
+      <span class="l">Giving to view another scene
+         <div class="linenumber-right-JR">95</div></span><br/>
+      <span class="l">So clear, so noble so serene</span><br/>
+      <span class="l">Twould seem enchantments varied hue</span><br/>
+      <span class="l">On palace street and avenue</span><br/>
+      <span class="l"><div class="add-above" style="left:-0.4em"><span class="metamark-insertion-INSERTION1">&#x002A;-</span><span class="glosses"><a href="../glosses/lille_poem_glosses2.php#LILLEMETAMARK" target="_blank">6</a></span></div>Colossal form and figure fair</span><br/>
+      <span class="l">Seemed moving, breathing, living there
+         <div class="linenumber-right-JR">100</div></span><br/>
+      <span class="l">The vaulted arch where sunlight pure</span><br/>
+      <span class="l">Might never pierce the deep obscure</span><br/>
+      <span class="l">Where, broadly barred the ancient door</span><br/>
+      <span class="l">Was with rich carving imaged oer</span><br/>
+      <span class="addSpan-INSERTION1-INSERTION1-END"></span>
+      <span class="l"><div class="add-margin-left"><span class="box14"><br/></span></div>Those ancient piles rose huge and high
+         <div class="linenumber-right-JR">105</div></span><br/>
+      <span class="l">In rich irregularity</span><br/>
+      <span id="INSERTION1-END"></span>
+      <span class="l">The bending gothic gable roof</span><br/>
+      <span class="l">Of past magnificence gave proof</span><br/>
+      <span class="l">The modern windows formal square</span><br/>
+      <span class="l">With Saxon arch was mingled there
+         <div class="linenumber-right-JR">110</div></span><br/>
+      <span class="l">Whose stern recesses dark and deep</span><br/>
+      <span class="l">The figured iron stanchions<span class="glosses"><a href="../glosses/lille_glosses.php#LILLESTANCHIONS" target="_blank">7</a></span> keep.</span><br/>
+      </span>
+                                </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+                                <button class="accordion">“Brussels” [poem]</button>
+                                <div class="panel">
+                                 <div class="title" style="text-align:center"><span class="space" style="padding-left:4.4em"> </span><span class="caps"><i>Brussels</i></span></div>
+   <span class="lg-stanza">
+      <span class="l">The racking clouds were eddying fast</span><br/>
+      <span class="l">Upon the bosom of the blast<span class="glosses"><a href="../glosses/brussels_glosses.php#RACKINGCLOUDS" target="_blank">1</a></span></span><br/>
+      <span class="l">In wild confusion fiercely driven
+         <div class="linenumber-right-JR">115</div></span><br/>
+      <span class="l">Fled they across the face of heaven</span><br/>
+      <span class="l">The fitful gust came shrieking high</span><br/>
+      <span class="l">The rattling rain flew driving by</span><br/>
+      <span class="l">But where the horizon stretched away</span><br/>
+      <span class="l">Towards the couch of parting day
+         <div class="linenumber-right-JR">120</div><div class="add-margin-right">mind</div><span class="glosses"><a href="../glosses/brussels_poem_glosses2.php#MIND" target="_blank">2</a></span></span><br/>
+      <span class="l">A streak of paly light was seen</span><br/>
+      <span class="l">The heaped and darkling clouds between</span><br/>
+      <span class="l">Against that light for time full brief</span><br/>
+      <span class="l"><span class="placeName-BRUSSELS">Brussels</span> arose in dark relief</span><br/>
+      <span class="l">Colossal on the western fire
+         <div class="linenumber-right-JR">125</div></span><br/>
+      <span class="l">Seemed massive tower and slender spire</span><br/>
+      <span class="l">Nearer and nearer as we drew</span><br/>
+      <span class="l">More strongly marked the outlines grew</span><br/>
+      <span class="l">Till of the buildings you might see</span><br/>
+      <span class="l"><span class="unclear-KCM">D</span>istinct the gothic tracerie
+         <div class="linenumber-right-JR">130</div></span><br/>
+      
+      <span class="l">The drawbridge rung, we past the gate<span class="glosses"><a href="../glosses/brussels_glosses.php#DRAWBRIDGE" target="_blank">3</a></span></span><br/>
+      <span class="l">And regal <span class="placeName-BRUSSELS">Brussels</span> entered straight</span><br/>
+      <span class="l">It stirs, to see the human tide</span><br/>
+      <span class="l">That marks a city in its pride</span><br/>
+      <span class="l">That fitful oceans eddying sweep
+         <div class="linenumber-right-JR">135</div></span><br/>
+      <span class="l">Is still more changeful than the deep</span><br/>
+      <span class="l">For those dark billows as they roll</span><br/>
+      <span class="l">Mark movements of the human soul.</span><br/>
+      <span class="l">Yet in that city there was none</span><br/>
+      <span class="l">Of that confused and busy hum
+         <div class="linenumber-right-JR">140</div></span><br/>
+      <span class="l">That tells of traffic &#x0026; of trade</span><br/>
+      <span class="l">No, <span class="placeName-BRUSSELS">Brussels</span> time of power <span class="del-strikethrough">is</span><div class="add-above" style="left:10.8em">was</div> sped</span><br/>
+      <span class="l">Yet in her streets was something seen</span><br/>
+      <span class="l">Spoke what the city once had been</span><br/>
+      <span class="l">Our rapid course as now we wheel
+         <div class="linenumber-right-JR">145</div></span><br/>
+      <span class="l">Where <u>she</u> rose the huge <span class="placeName-HOTELDEVILLEBRUSSELS">Hotel de ville</span><span class="glosses"><a href="../glosses/brussels_glosses.php#HOTELDEVILLEGLOSS" target="_blank">4</a></span></span><br/>
+      <span class="l">The noble spires proportions high</span><br/>
+      <span class="l">Stood forth upon the cloudy sky</span><br/>
+      <span class="l">In <span class="del-strikethrough">rich</span> all its fretted majesty.</span><br/>
+      <span class="l">And his last light the sun had sent
+         <div class="linenumber-right-JR">150</div></span><br/>
+      <span class="l">On Buttress and on Battlement</span><br/>
+      <span class="l">That while the houses were arrayed</span><br/>
+      <span class="l">In all the depth of twilight shade</span><br/>
+      <span class="l">Yet shot there faint a yellow glow</span><br/>
+      <span class="l">Where the tall arches shafted show
+         <div class="linenumber-right-JR">155</div></span><br/>
+      <span class="l">Glimmered a moment there the ray</span><br/>
+      <span class="l">Then fainter grew, and past away</span><br/>
+      <span class="l">Oh <span class="placeName-BRUSSELS">Brussels</span>, <span class="placeName-BRUSSELS">Brussels</span> thou hast been</span><br/>
+      <span class="l"><span class="del-strikethrough">Th</span> Of many an action strange, the scene</span><br/>
+      <span class="l">Thou sawst, on Julys dreadful night<span class="glosses"><a href="../glosses/brussels_glosses.php#JULYSDREADFULNIGHTGLOSS" target="_blank">5</a></span><div class="linenumber-right-JR">160</div></span><br/>
+      <span class="l">The veterans rushing to the fight</span><br/>
+      <span class="l">Thou heardest, when the word was spoken</span><br/>
+      <span class="l">At midnight thy repose was broken</span><br/>
+      <span class="l"><span class="del-strikethrough">The</span><div class="add-above" style="left:0.8em">By</div> tramp of men and neigh of steed</span><br/>
+      <span class="l">Battalions bursting forth to bleed
+         <div class="linenumber-right-JR">165</div></span><br/>
+      <span class="l">Till the dark phalanx waving crest</span><br/>
+      <span class="l">Forth from thy gates was forward prest</span><br/>
+      <span class="l">And Breaking with the morning mild</span><br/>
+      <span class="l">The distant roar of battle wild</span><br/>
+      <span class="l">And later still the rabble shout
+         <div class="linenumber-right-JR">170</div></span><br/>
+      <span class="l">And revolutions riot rout</span><br/>
+      <span class="l">Leaving such marks as long shall tell</span><br/>
+      <span class="l">Of dark destruction fierce and fell.</span><br/>
+      <div class="half"></div>
+      </span>
+                                </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+                                <button class="accordion">“The Meuse” [“Cassel,” poem]</button>
+                                <div class="panel">
+                                  <div class="title" style="text-align:center"><span class="space" style="padding-left:2.8em"> </span><span class="caps">THE MEUSE</span><br/><span class="space" style="padding-left:3.2em"> </span><span class="unclear-erased-KCM">The Meuse</span></div>
+   <span class="lg-stanza">
+      <span class="l">The sky was clear, the morn was gay</span><br/>
+      <span class="l">In promise of a cloudless day 
+         <div class="linenumber-right-JR">175</div></span><br/>
+      <span class="l">Fresh flew the breeze with whose light wing</span><br/>
+      <span class="l">Aspen and oak were quivering</span><br/>
+      <span class="l">From floweret dank it dashed the dew</span><br/>
+      <span class="l">The harebell bent its blossom blue</span><br/>
+      <span class="l">And from the Meuse the mist wreaths<span class="glosses"><a href="../glosses/the_meuse_glosses.php#MISTWREATHSGLOSS" target="_blank">1</a></span> grey
+         <div class="linenumber-right-JR">180</div></span><br/>
+      <span class="l">That morning breeze had swept away</span><br/>
+      <span class="l">Showing such scenes as well might seem</span><br/>
+      <span class="l">The fairy vision of a dream<span class="glosses"><a href="../glosses/the_meuse_glosses.php#FAIRYVISIONGLOSS" target="_blank">2</a></span></span><br/>
+      <span class="l">For changing still and still as fair</span><br/>
+      <span class="l">Rock&#x2038;<span class="add"><span class="space" style="padding-left:2.0em"> </span>wave</span>and wood were mingled there
+         <div class="linenumber-right-JR">185</div></span><br/>
+      <span class="l"><span class="supplied-DCH">Peak</span> <span class="unclear-KCM">over peak, fantastic ever</span><span class="glosses"><a href="../glosses/the_meuse_poem_glosses2.php#DAMAGEGLOSS" target="_blank">3</a></span></span><br/>
+      <span class="l"><span class="gap-burned" style="padding-left: 8em"></span></span><br/>
+      
+      <span class="l">And grey and gaunt their lichened head</span><br/>
+      <span class="l">Rose sheerly from the rivers bed<span class="glosses"><a href="../glosses/the_meuse_glosses.php#PEAKOVERPEAKGLOSS" target="_blank">4</a></span></span><br/>
+      <span class="l">Whose mantling wave, in foamy sheet
+         <div class="linenumber-right-JR">190</div></span><br/>
+      <span class="l">Their stern projecting bases beat</span><br/>
+      <span class="l">And lashed to fury in his pride</span><br/>
+      <span class="l">In circling whirlpools swept the tide</span><br/>
+      <span class="l">And threatening on some future day</span><br/>
+      <span class="l">Those mighty rocks to tear away
+         <div class="linenumber-right-JR">195</div></span><br/>
+      <span class="l">What though their front should seem to be</span><br/>
+      <span class="l">A barrier to eternity<span class="glosses"><a href="../glosses/the_meuse_glosses.php#BARRIERGLOSS" target="_blank">5</a></span></span><br/>
+      <span class="l">But on its side the cliffs between</span><br/>
+      <span class="l">Were mazy forests ever seen</span><br/>
+      <span class="l">That the tall cliffs steep flanks so grey</span><br/>
+      <span class="l">Were clothed in mantle green and gay</span><br/>
+      <span class="l">Long time along that <span class="unclear-DCH">d</span><span class="glosses"><a href="../glosses/the_meuse_poem_glosses2.php#DGLOSS" target="_blank">6</a></span> dell so deep
+         <div class="linenumber-right-JR">202</div></span><br/>
+      <span class="l">Beside the rivers bed we sweep</span><br/>
+      <span class="l"><span class="unclear-">So steep</span> the mighty crests inclined<span class="glosses"><a href="../glosses/the_meuse_poem_glosses2.php#DAMAGE2GLOSS" target="_blank">7</a></span></span><br/>
+      
+      <span class="l">None other pathway you might find
+         <div class="linenumber-right-JR">205</div></span><br/>
+      <span class="l">Till the tall cliffs gigantic grace</span><br/>
+      <span class="l">To undulating hills gave place</span><br/>
+      <span class="l">And vineyards clothe the bending brow</span><br/>
+      <span class="l">Stead of the clinging copsewood now</span><br/>
+      </span>
+                                </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+                                
+                                
+                                
             <p><a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">Account of a Tour on the Continent (MS IA g1)</a>
                
                <ul>
@@ -39,7 +422,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                </ul>
                				
             </p>             
-            <br></br>
+            
             <p><a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">Account of a Tour on the Continent (MS IA g2)</a>
                
                <ul>
@@ -57,9 +440,9 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                </ul>
                
             </p>
-            <br></br>
+            
             <p><a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">Account of a Tour on the Continent (MS VIII)</a>
-               <br></br>
+               
                <ul>
                   
                   <li><a href="../showcase/oh_are_there_spirits_can_there_be_poem_msviii.php">&#x201C;Oh are there spirits, can there be&#x201D; &#x005B;poem&#x005D;</a></li>
@@ -101,7 +484,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                </ul>
                
             </p>
-            <br></br>
+            
             <p><a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">Account of a Tour on the Continent (MS IX)</a>
                
                <ul>
@@ -113,12 +496,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
             </p>
             
          </div>
-         <br></br>
-        <br></br>
-            
+         
          <div id="TITLE" class="section">
-            <h3">Title</h3>
-            <br></br>
+            <span class="head-section">Title</span>
+            
             <p>In <a href="../notes/poems_1891_note.php" target="_blank" class="inactive"><i>Poems</i> (1891)</a>, 
                         <span class="persName-WGC">W. G. Collingwood</span> printed the title, 
                         Account of a Tour on the Continent, without square brackets, his symbol for declaring editorial intervention. 
@@ -133,7 +514,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                         In this apparatus, however, for convenience in the course of discussion, a short title is used with quotation marks (i.e., the &#x201C;Account&#x201D;) 
                         in order to avoid confusion with surrounding text.
             </p>
-            <br></br>
+            
             <p>In another, more minor discrepancy respecting the editorial title, both 
                         <a href="../notes/poems_1891_note.php" target="_blank" class="inactive"><i>Poems</i> (1891)</a> and the 
                         <a href="../notes/library_edition_note.php" target="_blank" class="inactive">Library Edition</a> cite the title in their respective tables of contents as 
@@ -142,7 +523,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                         (<a href="../bibiliography/bibliography.php#POEMS4D1891" target="_blank" class="inactive"><i>Poems</i> &#x005B;4<sup>o</sup>, 1891&#x005D;</a>, 1:xv, 119; 
                         <a href="../bibiliography/bibliography.php#POEMS8D1891" target="_blank" class="inactive"><i>Poems</i> &#x005B;8<sup>o</sup>, 1891&#x005D;</a>, 1:xix, 119; 
                         <a href="../bibiliography/bibliography.php#JRWORKSLE" target="_blank" class="inactive">Ruskin, <i>Works</i></a>, 2:xii, 340).
-            </p><br></br>
+            </p>
             
             <p><span class="persName-WGC">Collingwood</span> also invented titles for some individual sections of verse, untitled sections that he took from 
                         <span class="persName-JR">Ruskin</span>&#x02BC;s  
@@ -158,7 +539,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                </ul>
                
             </p>
-            <br></br>
+            
             <p>When two selections from the &#x201C;Account&#x201D; were published in the literary annual, 
                         <a href="../notes/friendships_offering_note.php" target="_blank"><i>Friendship&#x02BC;s Offering</i></a> 
                         (see <a href="COMPPUB">Composition and Publication</a>), 
@@ -168,10 +549,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
             </p>
             
          </div>
-         <br></br>
+         
          <div id="GENRE" class="section">
             <span class="head-section">Genre</span>
-            <br></br>
+            
             <p>Composite verse and prose illustrated travelogue. As proposed in 
                         <a href="COMPPUB">Composition and Publication</a>, 
                         <span class="persName-JR">Ruskin</span> and his <span class="persName-JJR">father</span> may originally have conceived the genre 
@@ -182,30 +563,30 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                         <a href="../showcase/account_of_a_tour_on_the_continent_fo.php" target="_blank" class="inactive">&#x201C;Fragments from a Metrical Journal&#x201D;</a> 
                         (see <a href="#TITLE">Title</a>). By this time, however, the scenario of a 
                         &#x201C;Metrical Journal&#x201D; was imaginary, since <span class="persName-JR">Ruskin</span> had developed the work into a composite 
-                        genre that d prose and graphic elements, as well as poetry, in its <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX version</a>.
+                        genre that included prose and graphic elements, as well as poetry, in its <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX version</a>.
             </p>
             
          </div>
-         <br></br>
+         
          <div id="MAJORMS" class="section">
             <span class="head-section">Manuscripts</span>
-            <br></br>
+            
             <p><a href="../apparatuses/msia_apparatus.php" target="_blank" class="inactive">MS IA</a>, 
                         <a href="../apparatuses/msvii_apparatus.php" target="_blank" class="inactive">MS VII</a>, 
                         <a href="../apparatuses/msviii_apparatus.php" target="_blank">MS VIII</a>, 
                         <a href="../apparatuses/msix_apparatus.php" target="_blank" class="inactive">MS IX</a>, 
                         <a href="../apparatuses/msxi_apparatus.php" target="_blank" class="inactive">MS XI</a>.
             </p>
-            <br></br>
+            
             <p>Facsimile and transcript by permission of Beinecke Rare Book and Manuscript Library, Yale University.</p>
-            <br></br>
+            
             <p><a href="../apparatuses/msia_apparatus.php" target="_blank" class="inactive">MS IA</a> and <a href="../apparatuses/msviii_apparatus.php" target="_blank">MS VIII</a> contain draft 
                         of verse and prose sections for the &#x201C;Account,&#x201D; and <a href="../apparatuses/msix_apparatus.php" target="_blank" class="inactive">MS IX</a> contains 
                         <span class="persName-JR">Ruskin</span>&#x02BC;s fair copy of the composite genre version. 
                         <a href="../apparatuses/msvii_apparatus.php" target="_blank" class="inactive">MS VII</a> and <a href="../apparatuses/msxi_apparatus.php" target="_blank" class="inactive">MS XI</a> include fair copy 
                         of a few sections in hands other than <span class="persName-JR">Ruskin</span>&#x02BC;s.
             </p>
-            <br></br>
+            
             <p><a href="../apparatuses/msia_apparatus.php" target="_blank" class="inactive">MS IA</a> contains two distinct manuscripts related to the &#x201C;Account,&#x201D; 
                         designated in <i>ERM</i> as 
                         <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a>, and 
@@ -221,7 +602,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                         since he draws on what he calls the &#x201C;original&#x201D; draft of the poem, &#x201C;Calais,&#x201D; 
                         selecting lines that exist only in this version (see <span class="glosses"><a href="../glosses/calais_poem_glosses#CALAISPOEMLINE2" target="_blank"" class="inactive">1</a></span>).
             </p>
-            <br></br>
+            
             <p><span class="persName-WGC">W. G. Collingwood</span> is inconsistent and seemingly arbitrary in 
                         his reliance on these &#x201C;originals,&#x201D; however. 
                         When printing what he calls the &#x201C;original draft&#x201D; of the poem &#x201C;Andernacht&#x201D; and the &#x201C;first draft&#x201D; of the poem &#x201C;St. Goar,&#x201D; 
@@ -238,7 +619,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                         and revisions in the hand of <span class="persName-JR">John Ruskin</span>&#x2014;and at one point, he even invents 
                         a line of his own rather than accept either authority.
             </p>
-            <br></br>
+            
             <p>The miscellaneous contents of <a href="../apparatuses/msia_apparatus.php" target="_blank" class="inactive">MS IA</a> were collected and bound 
                         under the auspices of the editors of the 
                         <a href="../notes/library_edition_note.php" target="_blank" class="inactive">Library Edition</a>, 
@@ -256,13 +637,13 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
             </p>
             
          </div>
-         <br></br>
+         
          <div id="DATE" class="section">
             <span class="head-section">Date</span>
-            <br></br>
+            
             <div id="DATEOFCOMPOSITION" class="subsection">
                <span class="head-subsection">Date of Composition</span>
-               <br></br>
+               
                <p>None of the manuscripts is dated by <span class="persName-JR">Ruskin</span>. Presumably, 
                             he began the work no earlier than the family&#x02BC;s departure for the <span class="geogName-CONTINENT">Continent</span> shortly after 
                             <span class="persName-JJR">John James Ruskin</span>&#x02BC;s 
@@ -274,7 +655,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             This manuscript, which is in the hands of both father and son, 
                             could even have been begun during the journey itself (see <a href="COMPPUB">Composition and Publication</a>).
                </p>
-               <br></br>
+               
                <p>If one argues a terminus a quo for <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a>, 
                             as the return home to <span class="placeName-HERNE">Herne Hill</span>, that date would be after 
                             , which was the day that the
@@ -285,7 +666,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             business and cross the <span class="geogName-ENGLISHCHANNEL">Channel</span> at 
                             <span class="placeName-CALAIS">Calais</span>.
                </p>
-               <br></br>
+               
                <p>It is likely that <span class="persName-JR">Ruskin</span> carried out 
                             the bulk of the composition and fair copying (especially the composite 
                             genre version) between <span class="date-1833-10">October 1833</span> and 
@@ -300,7 +681,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a> of the &#x201C;Account&#x201D; 
                             some months earlier than the <span class="date-1834-08">August</span> deadline&#x2014;perhaps abandoning the fair copy in 
                             approximately <span class="date-1834-05">May</span>.
-               </p><br>
+               </p>
                
                <p>Strong evidence in <a href="../apparatuses/msviii_apparatus.php" target="_blank">MS VIII</a> shows that 
                             <span class="persName-JR">Ruskin</span> labored on both draft and fair copy of the &#x201C;Account&#x201D; in <span class="date-1834">1834</span>, 
@@ -323,7 +704,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             which is included in <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII</a>, 
                             weighs heavily in favor of a date between <span class="date-1834-02">February</span> through <span class="date-1834-05">May 1834</span>.
                </p>
-               <br></br>
+               
                <p><span class="persName-JR">Ruskin</span> probably started this <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII draft</a> 
                             for the &#x201C;Account&#x201D;&#x2014;draft consisting largely of poems relating to the Alpine and Italian stages of the tour, 
                             along with prose relating to the Belgian and German stages&#x2014;around the time of his <span class="date-1834-02-08">8 February 1834 birthday</span>.  
@@ -345,7 +726,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             No available evidence explains the timing of this commission relative to that for <a href="../showcase/account_of_a_tour_on_the_continent_fo.php" target="_blank" class="inactive">&#x201C;Fragments from a Metrical Journal&#x201D;</a> in the same volume 
                             of <i>Friendship&#x02BC;s Offering</i>.
                </p>
-               <br></br>
+               
                <p>A benchmark often connected with <span class="persName-JR">Ruskin</span>&#x02BC;s composition of the &#x201C;Account&#x201D; 
                             is his acquisition of the <span class="date-1830">1830</span> illustrated edition of the topographical poem 
                             <i>Italy</i> by <a href="../notes/samuel_rogers_note.php" target="_blank" class="inactive">Samuel Rogers (1763&#x2013;1855)</a>. 
@@ -366,7 +747,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <a href="../bibiliography/bibliography#RFL" target="_blank" class="inactive">Burd, ed., <i>Ruskin Family Letters</i></a>, 286 n. 1, 253; and 
                             <a href="../bibiliography/bibliography.php#WIDERSEA" target="_blank" class="inactive">Hunt, <i>Wider Sea</i></a>).
                </p>
-               <br></br>
+               
                <p>The more elusive date is when the Ruskins acquired the <span class="date-1830">1830</span> edition of 
                             <i>Italy</i>. The question is of some interest, since it is argued in <a href="#COMPPUB">Composition and Publication</a> 
                             that <span class="persName-JR">Ruskin</span>&#x02BC;s &#x201C;Account&#x201D; underwent a development similar to that of 
@@ -398,7 +779,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             and it is possible that <span class="persName-JR">Ruskin</span> and <span class="persName-JJR">his father</span> 
                             projected a work on this unillustrated verse model prior to <span class="persName-JR">Ruskin</span>&#x02BC;s receiving the gift of the illustrated version.
                </p>
-               <br></br>
+               
                <p>When, then, did <span class="persName-JR">Ruskin</span> first see the <span class="date-1830">1830</span> version? 
                             It is possible that the gift did spur the family&#x02BC;s travel plans, but earlier than <span class="persName-JR">Ruskin</span> remembered, 
                             since the first mention of Continental tour occurs in the letters the family letters for <span class="date-1831">1831</span>. 
@@ -420,10 +801,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                </p>
                
             </div>
-            <br></br>
+            
             <div id="DATEOFPUBLICATION" class="subsection">
                <span class="head-subsection">Date of Publication</span>
-               <br></br>
+               
                <p><span class="persName-WGC">W. G. Collingwood</span> attributed the first published version of the &#x201C;Account,&#x201D; 
                             <a href="../showcase/account_of_a_tour_on_the_continent_fo.php" target="_blank" class="inactive">&#x201C;Fragments from a Metrical Journal&#x201D;</a>, to <span class="date-1835">1835</span>, 
                             based on its appearance in <a href="../bibiliography/bibliography.php#FRIENDSHIPSOFFERING1835" target="_blank" class="inactive"><i>Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath . . . for MDCCCXXXV</i></a>. 
@@ -447,10 +828,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
             </div>
             
          </div>
-         <br></br>
+         
          <div id="COMPPUB" class="section">
             <span class="head-section">Composition and Publication</span>
-            <br></br>
+            
             <p>To reconstruct the composition and explain the publication history of the 
                         &#x201C;Account,&#x201D; one must cope with complex materials distributed 
                         throughout several distinct manuscripts. 
@@ -466,10 +847,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                         <a href="APPARATUSTABLE1">Table 1</a> lists the sequential contents of each of the manuscripts and of the published versions of the work. 
                         <a href="APPARATUSTABLE2">Table 2</a> lists the sequential contents and planned extension of the final manuscript version.
             </p>
-            <br></br>
+            
             <div id="OVERVIEW" class="subsection">
                <span class="head-subsection">Overview</span>
-               <br></br>
+               
                <p>The evolution of the &#x201C;Account,&#x201D; culminated in edited 
                             publications of <span class="date-1834-11">November 1834</span>, <span class="date-1850">1850</span>, 
                             <span class="date-1891">1891</span>, and <span class="date-1902">1903</span>. 
@@ -482,9 +863,9 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             in earlier versions; and those earlier versions arguably show <span class="persName-JR">Ruskin</span> 
                             pursuing a distinct form of travelogue from what the work became.
                </p>
-               <br></br>
+               
                <p>Here is a summary of the stages of composition and publication, as represented by surviving manuscripts.</p>
-               <br></br>
+               
                <ul>
                   
                   <li>In the first stage of composition, as represented by two sheets later bound in 
@@ -499,7 +880,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 The father and son composed this version either during the <span class="date-1833-05-1833-09">May&#x2010;September 1833</span> journey itself, 
                                 or following the family&#x02BC;s return home around <span class="date-1833-09-20">20 September</span> (see <a href="#DATE">Date</a>).
                   </li>
-                  <br></br>
+                  
                   <li>In a second stage of composition, <span class="persName-JR">Ruskin</span> reconceptualized and elaborated the work as a composite&#x2010;genre 
                                 rather than as a solely verse travelogue. This stage is epitomized in brief by a folded sheet, 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">MS IA, <i>g</i>.2</a>, 
@@ -515,7 +896,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 <a href="../apparatuses/msviii_apparatus.php" target="_blank">MS VIII</a> 
                                 (see <a href="../apparatuses/msviii_apparatus.php#SECTIONB" target="_blank">MS VIII: Contents, section <i>b</i></a>).
                   </li>
-                  <br></br>
+                  
                   <li>The <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII draft</a> includes verse, prose, and some rough drawings, 
                                 supplying text for the fair copy of the composite&#x2010;genre version that <span class="persName-JR">Ruskin</span> must by this time have had underway in 
                                 <a href="../apparatuses/msix_apparatus.php" target="_blank" class="inactive">MS IX</a>. This draft relates mainly to the <span class="geogName-RHINE">Rhine</span> journey, 
@@ -541,7 +922,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII</a>, <span class="persName-JR">Ruskin</span> carried forward with poetry about the <span class="geogName-ALPS">Alps</span>
                                 (see <a href="../apparatuses/msviii_apparatus.php#LISTB1" target="_blank">MS VIII: Contents, section <i>b</i>, list <i>b</i>.1</a>).
                   </li>
-                  <br></br>
+                  
                   <li>In <a href="../apparatuses/msix_apparatus.php" target="_blank" class="inactive">MS IX</a>, containing the elegant and elaborate 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">fair copy</a> of the composite&#x2010;genre version of the &#x201C;Account,&#x201D; 
                                 <span class="persName-JR">Ruskin</span> mimicked the verse travelogues and prose landscape 
@@ -563,7 +944,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 for the <span class="date-1833">1833</span> <i>Facsimiles of Sketches Made in Flanders and Germany</i>. 
                                 But <span class="persName-JR">Ruskin</span> drew on other graphic sources, as well, or invented his own scenes.
                   </li>
-                  <br></br>
+                  
                   <li><span class="persName-JR">Ruskin</span> failed to complete the <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>, 
                                 but he outlined its planned extension in a 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msviii_contents.php" target="_blank" class="inactive">List of Proposed Additional Contents for Account of a Tour on the Continent</a>, 
@@ -577,7 +958,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 can be found in <a href="../apparatuses/msvii_apparatus.php" target="_blank" class="inactive">MS VII</a> and 
                                 <a href="../apparatuses/msxi_apparatus.php" target="_blank" class="inactive">MS XI</a>.
                   </li>
-                  <br></br>
+                  
                   <li><span class="persName-JR">Ruskin</span> commenced his <a href="../showcase/account_of_a_tour_on_the_continent_msviii_contents.php" target="_blank" class="inactive">List of Proposed Additional Contents for Account of a Tour on the Continent</a> 
                                 with entries for <span class="placeName-ANDERNACHT">Andernacht</span>, <span class="placeName-EHRENBREITSTEIN">Ehrenbreitstein</span>, <span class="placeName-STGOAR">St. Goar</span>, 
                                 <span class="placeName-HEIDELBERG">Heidelberg</span>, and <span class="placeName-SCHAFFHAUSEN">Schaffhausen</span>&#x2014;sections 
@@ -609,7 +990,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 must have been completed no later than <span class="date-1834-08">August 1834</span>, 
                                 when <span class="persName-TP">Pringle</span>&#x02BC;s compilation was due to the printer in time for publication in <span class="date-1834-11">November 1834</span>.
                   </li>
-                  <br></br>
+                  
                   <li>In <span class="date-1850">1850</span>, <span class="persName-JJR">John James Ruskin</span> and <span class="persName-JR">Ruskin</span>&#x02BC;s editor, 
                                 <a href="../notes/harrison_w_h_note.php" target="_blank" class="inactive">W. H. Harrison</a>, published 
                                 <a href="../showcase/ehrenbreitstein_poem_1850.php" target="_blank" class="inactive">Ehrenbreitstein</a> in 
@@ -633,7 +1014,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 from <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX</a> along with some additional verse 
                                 that <span class="persName-WGC">Collingwood</span> had neglected in <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII</a>.
                   </li>
-                  <br></br>
+                  
                   <li>Both of these edited versions used the <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX</a> fair copy as main copytext, 
                                 supplemented by draft from <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII</a> in order to represent the full scope of the 
                                 <span class="date-1833">1833</span> tour. Both versions also preferred <span class="persName-JR">Ruskin</span>&#x02BC;s revised texts of 
@@ -657,7 +1038,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 as presented in his <span class="date-1894">1894</span> biography, <a href="../bibiliography/bibliography.php#WGCLIFEOFJR1893" target="_blank" class="inactive"><i>Life and Work of John Ruskin</i></a> 
                                 (see <a href="../bibiliography/bibliography.php#JRWORKSLE" target="_blank" class="inactive">Ruskin, <i>Works</i></a>, 35: 81; and see <a href="#DISCUSSION">Discussion</a>).
                   </li>
-                  <br></br>
+                  
                </ul>
                
                <p>This overview is substantiated by detailed analysis in <a href="#DRAFT">Draft</a>, 
@@ -667,7 +1048,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             For ease of reference, the analysis is supported by tables, which 
                             organize information about the contents of the respective manuscripts.
                </p>
-               <br></br>
+               
                <ul>
                   
                   <li>In <a href="APPARATUSTABLE1">Table 1</a>, 
@@ -684,7 +1065,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 which he attached to the verse sections of some manuscripts, 
                                 and which may provide clues about the sequence of composition.
                   </li>
-                  <br></br>
+                  
                   <li><a href="APPARATUSTABLE2">Table 2</a> organizes information about the contents of the &#x201C;Account&#x201D; 
                                 from the perspective of <span class="persName-JR">Ruskin</span>&#x02BC;s final version, as he partly realized his vision in the fair copy, 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX</a>, 
@@ -695,7 +1076,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 this table provides a checklist for the location of draft, fair copy, and publication of individual sections of the &#x201C;Account.&#x201D; 
                                 The table makes note of editorial interventions in titles.
                   </li>
-                  <br></br>
+                  
                </ul>
                
             </div>
@@ -706,51 +1087,50 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                <div class="head-table">Table 1. Account of a Tour on the Continent: Sequence of Texts (Verse and Prose) and Drawings within Corpuses, by Manuscript or Edition</div>
                
                <tr class="label">
-                  <br></br>
+                  
                   <td><a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a></td>
-                  <br></br>
+                  
                   <td><a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a>, 
                                     <span class="persName-JR">Ruskin</span>&#x02BC;s Line Numbering
-                                    <br></br>
                   </td>
                   
                   <td><a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">MS IA, <i>g</i>.2</a></td>
-                  <br></br>
+                  
                   <td><a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">MS IA, <i>g</i>.2</a>, 
                                     <span class="persName-JR">Ruskin</span> Line Numbering
                   </td>
-                  <br></br>
+                  
                   <td><a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII &#x201C;Account&#x201D; draft</a></td>
-                  <br></br>
+                  
                   <td><a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII &#x201C;Account&#x201D; draft</a>, 
                                     <span class="persName-JR">Ruskin</span>&#x02BC;s Line Numbering
                   </td>
-                  <br></br>
+                  
                   <td>MS VIII, <a href="../showcase/account_of_a_tour_on_the_continent_msviii_contents.php" target="_blank" class="inactive">MS VIII, List of Proposed Additional Contents</a></td>
-                  <br></br>
+                  
                   <td><a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a></td>
-                  <br></br>
+                  
                   <td><a href="../notes/poems_1891_note.php" target="_blank" class="inactive">Ruskin, <i>Poems</i> (1891)</a></td>
-                  <br></br>
+                  
                   <td><a href="../notes/library_edition_note.php" target="_blank" class="inactive">Ruskin, <i>Works</i></a>, vol. 2 (1903)
                   </td>
-                  <br></br>
+                  
                </tr>
                
                <tr class="data">
                   
                   <td><a href="../showcase/calais_poem_msia_g1.php">&#x201C;Calais&#x201D; &#x005B;poem&#x005D;</a></td>
-                  <br></br>
+                  
                   <td>1&#x2013;24</td>
-                  <br></br>
+                  
                   <td><a href="../showcase/calais_prose_msia_g2.php">&#x201C;Calais&#x201D; &#x005B;prose&#x005D;</a></td>
-                  <br></br>
+                  
                   <td>n/a</td>
-                  <br></br>
+                  
                   <td><a href="../showcase/oh_are_there_spirits_can_there_be_poem_msviii.php">&#x201C;Oh are there spirits, can there be&#x201D; &#x005B;poem&#x005D;</a></td>
-                  <br></br>
+                  
                   <td>506&#x2013;19</td>
-                  <br></br>
+                  
                   <td>"1 Andernacht"</td>
                   
                   <td></td>
@@ -1713,7 +2093,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
             
             <div id="DRAFT" class="subsection">
                <span class="head-subsection">Draft</span>
-               <br></br>
+               
                <p>The larger hypothesis advanced here concerning the composition of the &#x201C;Account&#x201D; is that <span class="persName-JR">Ruskin</span> 
                             developed the work in stages, from a verse travelogue in the eighteenth&#x2010;century topographical manner&#x2014;as 
                             represented by <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a>, 
@@ -1730,10 +2110,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <a href="../notes/pringle_thomas_note.php" target="_blank">Thomas Pringle (1789&#x2013;1834)</a>, is indirect.
                </p>
                
-               <br></br>
+               
                <div id="DRAFTMSIAG1" class="sub-subsection">
                   <span class="head-sub-subsection">MS IA, <i>g</i>.1</span>
-                  <br></br>
+                  
                   <p>For a physical description of <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a>, 
                                 which consists of 2 sheets, see <a href="../apparatuses/msia_apparatus.php#CONTENTS" target="_blank" class="inactive">MS IA: Contents</a>, <i>g</i>. 
                                 The case for this manuscript as the earliest extant surviving draft of the &#x201C;Account&#x201D; is based on the fact that its markup for revision 
@@ -1743,7 +2123,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 from <span class="placeName-CALAIS">Calais</span> to <span class="placeName-BRUSSELS">Brussels</span> and along the <span class="geogName-MEUSE">Meuse River</span>, 
                                 formed a logical compositional starting point for the work.
                   </p>
-                  <br></br>
+                  
                   <p>The recto of sheet 1 begins with the poem, <a href="../showcase/calais_poem_msia_g1.php">&#x201C;Calais&#x201D;</a>, 
                                 entitled as such, and in the hand of <span class="persName-JJR">John James Ruskin</span>. On the verso, <span class="persName-JJR">John James</span> continued with the poem, 
                                 <a href="../showcase/cassel_poem_msia_g1.php">&#x201C;Cassel&#x201D;</a> 
@@ -1775,7 +2155,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 <a href="../notes/rogers_samuel_note.php" target="_blank">Samuel Rogers (1763&#x2013;1855)</a>&#x02BC;s <i>Italy</i> 
                                 stand in relation to that work&#x02BC;s repackaging in <span class="date-1830">1830</span> as an illustrated travelogue.
                   </p>
-                  <br></br>
+                  
                   <p>One might argue that <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a>, 
                                 does not witness a distinct version of the &#x201C;Account&#x201D; project, one conceived as travelogue solely in verse, 
                                 but rather draft that <span class="persName-JR">Ruskin</span> intended to incorporate directly into the composite&#x2010;genre 
@@ -1798,10 +2178,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                   
                </div>
                
-               <br></br>
+               
                <div id="DRAFTMSIAG2" class="sub-subsection">
                   <span class="head-sub-subsection">MS IA, <i>g</i>.2</span>
-                  <br></br>
+                  
                   <p>For a physical description of <a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">MS IA, <i>g</i>.2</a>, 
                                 see <a href="../apparatuses/msia_apparatus.php#CONTENTS" target="_blank" class="inactive">MS IA: Contents</a>, <i>g</i>. 
                                 This manuscript differs in size and appearance from 
@@ -1815,7 +2195,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 (which incorporates the changes made to the draft), but the prose is followed by drafts of poems that, 
                                 in topographical terms of the actual tour, skip far ahead of the family&#x02BC;s landing at <span class="placeName-CALAIS">Calais</span>, as if presenting highlights of the tour.
                   </p>
-                  <br></br>
+                  
                   <p>The destinations represented by the draft poems are widely spaced but not random. 
                                 The manuscript&#x02BC;s four poems form two pairs, one pair consisting of two nearly adjacent Italian destinations, 
                                 <a href="../showcase/passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</a> and 
@@ -1826,7 +2206,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 (the family actually journeyed down the <span class="geogName-RHINE">Rhine</span> to the <span class="geogName-BLACKFOREST">Black Forest</span>, and then crossed the <span class="geogName-ALPS">Alps</span> and descended to the Italian lakes and <span class="placeName-MILAN">Milan</span>), 
                                 the arrangement suggests an abstract of the scope of the composite&#x2010;genre version.
                   </p>
-                  <br></br>
+                  
                   <p><span class="persName-JR">Ruskin</span> did not fair&#x2010;copy <a href="../showcase/passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</a> and 
                                 <a href="../showcase/milan_cathedral_poem_msia_g2.php">&#x201C;Milan Cathedral&#x201D;</a> 
                                 in <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX</a>, 
@@ -1850,7 +2230,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 Thus, the sequence of draft begun in MS VIII bears a near relation to the two pairs of poems drafted in 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">MS IA, <i>g</i>.2</a>.
                   </p>
-                  <br></br>
+                  
                   <p>What that relation was exactly, and what was the relative chronology of composition in MS IA, <i>g</i>.2, and MS VIII are problems requiring further research. 
                                 It appears that <a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">MS IA, <i>g</i>.2</a>, reflects a turning point 
                                 in <span class="persName-JR">Ruskin</span>&#x02BC;s reconsideration of the genre of the &#x201C;Account,&#x201D; 
@@ -1869,10 +2249,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                   
                </div>
                
-               <br></br>
+               
                <div id="DRAFTMSVIII" class="sub-subsection">
                   <span class="head-sub-subsection">MS VIII</span>
-                  <br></br>
+                  
                   <p><a href="../apparatuses/msviii_apparatus.php" target="_blank">MS VIII</a> is a notebook that <span class="persName-JR">Ruskin</span> 
                                 had used for rough copy of poetry and since <span class="date-1831">1831</span>, and that he would continue to use for drafting imaginative work 
                                 through <span class="date-1836">1836</span>, and possibly as late as <span class="date-1838">1838</span>. 
@@ -1895,7 +2275,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 he had already drafted the earlier prose sections for the &#x201C;Calais,&#x201D; &#x201C;Cassel,&#x201D; and &#x201C;Lille&#x201D; sections, and transferred the draft to 
                                 his illustrated <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>.
                   </p>
-                  <br></br>
+                  
                   <p>Since <span class="persName-JR">Ruskin</span> did not entitle the 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">&#x201C;Account&#x201D; draft in MS VIII</a> (or anywhere else), 
                                 it is not clear precisely at what point the intended draft begins. Following the birthday ode, 
@@ -1915,7 +2295,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 draft at that point intermingling with poems related to <span class="persName-JJR">John James</span>&#x02BC;s upcoming <span class="date-1834-05-10">10 May 1834</span> 
                                 birthday (see <a href="../apparatuses/ms_viii_apparatus.php#LISTB2" target="_blank" class="inactive">MS VIII: Contents, Section <i>b</i>.2</a>).
                   </p>
-                  <br></br>
+                  
                   <p>By commencing the <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">&#x201C;Account&#x201D; draft in MS VIII</a> 
                                 with <a href="../showcase/source_of_the_arveron_prose_msviii.php">&#x201C;Source of the Arveron&#x201D;</a>, 
                                 <span class="persName-JR">Ruskin</span> hearkens nearly to the end of the 
@@ -1938,7 +2318,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII &#x201C;Account&#x201D; draft</a> around 
                                 <span class="date-1834-02-13-1834-02-28">the middle to late February 1834</span>.
                   </p>
-                  <br></br>
+                  
                   <p>A February date for <span class="persName-JR">Ruskin</span>&#x02BC;s starting the 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">&#x201C;Account&#x201D; draft in MS VIII</a> 
                                 accords well with the trajectory of this writing toward a terminus ad quem among draft of poetry celebrating his father&#x02BC;s 
@@ -1970,7 +2350,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 (These conclusions assume that <span class="persName-JR">Ruskin</span> worked sequentially through the 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>.)
                   </p>
-                  <br></br>
+                  
                   <p>The <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII draft sequence for the &#x201C;Account&#x201D;</a> 
                                 contains some rough pen&#x2010;and&#x2010;ink sketches (e.g., following the draft for the prose piece, 
                                 <a href="../showcase/aix_la_chapelle_prose_msviii.php">&#x201C;Aix la Chapelle&#x201D;</a>), 
@@ -1980,7 +2360,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                   </p>
                   
                </div>
-               <br></br>
+               
                
                <div id="PROPOSEDCONTENTS" class="sub-subsection">
                   <span class="head-sub-subsection"><span class="persName-JR">Ruskin</span>&#x02BC;s Plans for Extension of the &#x201C;Account&#x201D;</span>
@@ -1995,7 +2375,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX</a>, or at the point where he left off fair&#x2010;copying altogether, 
                                 having just started the section on &#x201C;Heidelberg.&#x201D; There is no way to tell whether <span class="persName-JR">Ruskin</span> compiled the table all at once or developed it over time.
                   </p>
-                  <br></br>
+                  
                   <p>In the list of illustrations that forms the right&#x2010;hand column, the title of <span class="persName-WBI">William Brockedon</span>&#x02BC;s 
                                 <i>Illustrations of the Passes of the Alps</i> figures prominently. This book was not available to <span class="persName-JR">Ruskin</span> 
                                 prior to his fifteenth birthday, <span class="date-1834-02-22">22 February 1834</span> (see <a href="#DRAFTMSVIII">Draft: MS VIII</a>). 
@@ -2003,7 +2383,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 <i>Facsimiles of Sketches Made in Flanders and Germany</i> and to <span class="persName-SR">Samuel Rogers</span>&#x02BC;s 
                                 <i>Italy</i>, as well to drawings of &#x201C;my own.&#x201D;
                   </p>
-                  <br></br>
+                  
                </div>
                
                
@@ -2159,10 +2539,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                
             </div>
             
-            <br></br>
+            
             <div id="FAIRCOPY" class="subsection">
                <span class="head-subsection">Fair Copy (MS IX, MS VII, MS XI)</span>
-               <br></br>
+               
                <p>For details about the content and layout of the composite&#x2010;genre version of the &#x201C;Account&#x201D; that <span class="persName-JR">Ruskin</span> realized in the 
                             <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>, 
                             see <a href="#SOURCES">Discussion: Sources and Influences</a>. 
@@ -2179,7 +2559,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             a new medium that he discovered in <span class="persName-SP">Samuel Prout</span>&#x02BC;s <span class="date-1833">1833</span> <i>Facsimiles of Sketches Made in Flanders and Germany</i>. 
                             The text is lettered in a careful copperplate&#x2010;style hand, justified left and right.
                </p>
-               <br></br>
+               
                <p>As argued in <a href="#DRAFTMSVIII">Draft: MS VIII</a>, <span class="persName-JR">Ruskin</span> started the 
                             <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a> no later than <span class="date-1834-01">January 1834</span>, 
                             and perhaps earlier, sometime during the <span class="date-1834-10-1834-12">final quarter of 1833</span>&#x2014;earlier, in any case, 
@@ -2192,7 +2572,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             that he was in process of fair&#x2010;copying. He had arrived at that point, when he broke off work altogether on the 
                             <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>.
                </p>
-               <br></br>
+               
                <p>This break occurred when <span class="persName-JR">Ruskin</span> had completed fair&#x2010;copying the poem, <a href="../showcase/heidelberg_poem_msix.php" target="_blank" class="inactive">&#x201C;Heidelberg&#x201D;</a>, 
                             and had started fair&#x2010;copying the first few lines of the corresponding prose section, <a href="../showcase/heidelberg_prose_msix.php" target="_blank" class="inactive">&#x201C;Heidelberg&#x201D;</a>. 
                             The draft of this prose piece occurs intermittently in the section of MS VIII that mingles draft of the &#x201C;Account&#x201D; with droft of birthday poems for <span class="persName-JJR">John James</span> 
@@ -2212,7 +2592,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             indicating that at that point he was readying materials for fair&#x2010;copying the trio of sections that precede the &#x201C;Heidelberg&#x201C; section&#x2014;&#x201C;Andernacht,&#x201D; 
                             &#x201C;Ehrenbreitstein,&#x201D; and &#x201C;St. Goar.&#x201D;
                </p>
-               <br></br>
+               
                <p>The cause of <span class="persName-JR">Ruskin</span>&#x02BC;s abruptly ceasing fair&#x2010;copying in MS IX is readily evident in the
                             <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII draft of the &#x201C;Account&#x201D;</a>, in which 
                             <a href="../apparatuses/msviii_apparatus.php#LISTB2" target="_blank">MS VIII: Contents, <i>b</i>.2</a> runs up against draft for 
@@ -2220,14 +2600,14 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             as segue the project into his first professional publications, the poems for 
                             <a href="../notes/friendships_offering_note.php" target="_blank"><i>Friendship&#x02BC;s Offering</i></a>.
                </p>
-               <br></br>
+               
                <p>Several blank spaces in the manuscript mark places for drawings, and one cannot determine the difference between a gap where a drawing has gone missing 
                             and one that never held anything. In <span class="date-1885">1885</span>, commenting on the manuscript in <i>Praeterita</i>, <span class="persName-JR">Ruskin</span> said both reasons were accountable 
                             (<a href="../bibiliography/bibliography.php#JRWORKSLE" target="_blank" class="inactive">Ruskin, <i>Works</i></a>, 35:81). Moreover, 
                             there appears no way of knowing whether more drawings were lost (or restored) between <span class="date-1885-1903">1885 and 1903</span>, 
                             when <span class="persName-ETC">Cook</span> and <span class="persName-AW">Wedderburn</span> described the manuscript for the Library Edition.
                </p>
-               <br></br>
+               
                <p>Folowing the recto (48r) containing the prose fragment for <a href="../showcase/heidelberg_prose_msix.php" target="_blank" class="inactive">&#x201C;Heidelberg&#x201D;</a>, 
                             no more text appears for the <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>, 
                             but on the following 7 rectos (49r&#x2013;55r) are pasted the 8 drawings described in 
@@ -2242,17 +2622,17 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                
             </div>
             
-            <br></br>
+            
             <div id="PUBLICATION" class="subsection">
                <span class="head-subsection">Publication</span>
-               <br></br>
+               
                <p>For a consideration of the broader editorial implications of this detailed account of the publication history of the &#x201C;Account,&#x201D; 
                             see <a href="#EDITORIALAPPROACHES">Discussion: Editorial Approaches</a>.
                </p>
-               <br></br>
+               
                <div id="PUBLICATION1834" class="sub-subsection">
                   <span class="head-sub-subsection">1834</span>
-                  <br></br>
+                  
                   <p><a href="../bibiliography/bibliography.php#FRIENDSHIPSOFFERING1835" target="_blank" class="inactive"><i>Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath . . . for MDCCCXXXV</i></a> 
                                 contains two verse publications signed &#x201C;J.R.&#x201D; In one, <a href="../showcase/account_of_a_tour_on_the_continent_fo.php" target="_blank" class="inactive">&#x201C;Fragments from a Metrical Journal&#x201D;</a> 
                                 (pp. 317&#x2013;19), <span class="persName-JR">Ruskin</span> revised poems taken directly from the &#x201C;Account&#x201D;; in the second, <a href="../apparatuses/saltzburg_apparatus.php" target="_blank">&#x201C;Saltzburg&#x201D;</a> 
@@ -2263,7 +2643,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 based on a drawing by <a href="../notes/purser_william_note.php" target="_blank">William Purser (ca. 1790&#x2013;1852)</a>, 
                                 which was printed facing the first page of <span class="persName-JR">Ruskin</span>&#x02BC;s poem.
                   </p>
-                  <br></br>
+                  
                   <p>As an <a href="../notes/annuals_note.php" target="_blank">annual</a>, 
                                 <a href="../bibiliography/bibliography.php#FRIENDSHIPSOFFERING1835" target="_blank" class="inactive"><i>Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath . . . for MDCCCXXXV</i></a> 
                                 would have been published in <span class="date-1834-11">November 1834</span>, in time for the holiday season of 
@@ -2290,7 +2670,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 <a href="../showcase/st_goar_poem_msix.php" target="_blank" class="inactive">&#x201C;St. Goar&#x201D;</a>). 
                                 (see <a href="../bibiliography/bibliography.php#JRWORKSLE" target="_blank" class="inactive">Ruskin, <i>Works</i></a>, 2:353&#x2013;54 n. 2).
                   </p>
-                  <br></br>
+                  
                   <p><span class="persName-WGC">W. G. Collingwood</span> misdated the publication of <a href="../apparatuses/saltzburg_apparatus.php" target="_blank">&#x201C;Saltzburg&#x201D;</a> 
                                 as a year later, the end of <span class="date-1835">1835</span>, rather than the end of <span class="date-1834">1834</span>, and interpreted its draft in MS VIII as placed achronologically in the notebook, 
                                 showing that <span class="persName-JR">Ruskin</span> had &#x201C;abandoned&#x201D; the &#x201C;Account&#x201D; draft and taken up &#x201C;poems descriptive of new Tour&#x2014;that of <span class="date-1835">1835</span>,&#x201D; when the family first visited Salzburg. 
@@ -2319,7 +2699,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 (<span class="persName-TP">Pringle</span> himself died on <span class="date-1834-12-05">5 December 1834</span>; see <a href="../notes/pringle_thomas_note.php" target="_blank">Thomas Pringle (1789&#x2013;1834)</a> 
                                 and <a href="../bibiliography/bibliography.php#VIGNEPRINGLE" target="_blank" class="inactive">Vigne, <i>Thomas Pringle</i></a>, 247).
                   </p>
-                  <br></br>
+                  
                   <p>This timetable also accords well with a <span class="date-1834-03-10">10 March 1834</span> verse epistle by <span class="persName-JR">Ruskin</span> to his father, 
                                 <a href="../showcase/but_this_day_week_msxi.php" target="_blank" class="inactive">&#x201C;But this day week&#x201D;</a>, 
                                 which is remarkable for <i>not</i> mentioning the <i>Friendship&#x02BC;s Offering</i> commissions. 
@@ -2339,7 +2719,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 see also <a href="../notes/hogg_james_note.php" target="_blank">James Hogg &#x005B;1770&#x2013;1835&#x005D;</a>, and 
                                 <a href="#DISCUSSION">Discussion</a>).
                   </p>
-                  <br></br>
+                  
                   <p><span class="persName-JH">Hogg</span> was sent a sampling of <span class="persName-JR">Ruskin</span>&#x02BC;s verse (possibly a selection from the &#x201C;Account&#x201D;), 
                                 to which he responded with a critique (seconded by his children&#x02BC;s tutor) that does not survive, 
                                 but that <span class="persName-JR">John</span> characterized as treating him with lenience while laying stress on the derivativeness of his verse. 
@@ -2361,10 +2741,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                   </p>
                   
                </div>
-               <br></br>
+               
                <div id="PUBLICATION1850" class="sub-subsection">
                   <span class="head-sub-subsection">1850</span>
-                  <br></br>
+                  
                   <p>In <span class="date-1850">1850</span>, another verse selection from the &#x201C;Account&#x201D; was published as <a href="../showcase/ehrenbreitstein_poem_1850.php" target="_blank" class="inactive">&#x201C;Ehrenbreitstein: Fragment from a Metrical Journal (Aetat 16)&#x201D;</a> 
                                 in <a href="../bibiliography/bibliography.php#POEMS1850" target="_blank" class="inactive">Ruskin, <i>Poems</i> (1850)</a> (pp. 8&#x2013;12), 
                                 the privately published collection of <span class="persName-JR">Ruskin</span>&#x02BC;s poetry compiled by <span class="persName-JJR">John James Ruskin</span> and 
@@ -2373,7 +2753,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 The editors&#x02BC; title consciously references the <a href="../showcase/account_of_a_tour_on_the_continent_fo.php" target="_blank" class="inactive">&#x201C;Fragments from a Metrical Journal&#x201D;</a> 
                                 published sixteen years earlier, and it is the only poem from the &#x201C;Account&#x201D; project to be included in the <span class="date-1850">1850</span> collection.
                   </p>
-                  <br></br>
+                  
                   <p>Perhaps the choice was an acknowledgment that, in the <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS IX fair copy</a> of the &#x201C;Account,&#x201D; 
                                 &#x201C;Ehrenbreitstein&#x201D; forms a thematic bridge between &#x201C;Andernacht&#x201D; and &#x201C;St. Goar,&#x201D; a connection that 
                                 was broken when only the latter two poems were selected to be published as 
@@ -2392,10 +2772,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                   </p>
                   
                </div>
-               <br></br>
+               
                <div id="PUBLICATION1891" class="sub-subsection">
                   <span class="head-sub-subsection">1891</span>
-                  <br></br>
+                  
                   <p>For the reader of <a href="../bibiliography/bibliography.php#FRIENDSHIPSOFFERING1835" target="_blank" class="inactive"><i>Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath . . . for MDCCCXXXV</i></a> 
                                 or of <a href="../bibiliography/bibliography.php#POEMS1850" target="_blank" class="inactive">Ruskin, <i>Poems</i> (1850)</a>, the 
                                 &#x201C;Metrical Journal,&#x201D; from which <a href="../showcase/account_of_a_tour_on_the_continent_fo.php" target="_blank" class="inactive">&#x201C;Fragments from a Metrical Journal&#x201D;</a> 
@@ -2430,7 +2810,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 that <span class="persName-TJW">Wise</span> could forge in the form of &#x201C;rare&#x201D; pamphlets (see <a href="../bibiliography/bibliography.php#WISERUSKINI" target="_blank" class="inactive">Dearden, &#x201C;Wise and Ruskin I&#x201D;</a>, 46&#x2013;47; 
                                 and <a href="../notes/forgery_and_piracy_note.php" target="_blank" class="inactive">Forgery and Piracy</a>).
                   </p>
-                  <br></br>
+                  
                   <p>The tendency to think of the &#x201C;Account&#x201D; as a verse travelogue gained impetus from the elder <span class="persName-JJR">Ruskin</span> himself, 
                                 who in <i>Praeterita</i> characterized it as &#x201C;a rhymed history of the tour&#x201D; and a &#x201C;poetical account of our tour, 
                                 in imitation of <span class="persName-SR">Rogers</span>&#x02BC;s <i>Italy</i>&#x201D; (<a href="../bibiliography/bibliography.php#JRWORKSLE" target="_blank" class="inactive">Ruskin, <i>Works</i></a>, 35:81). 
@@ -2446,7 +2826,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 1:265; and <a href="../bibiliography/bibliography.php#POEMS8D1891" target="_blank" class="inactive"><i>Poems</i> &#x005B;8<sup>o</sup>, 1891&#x005D;</a>, 
                                 1:267). Whether <span class="persName-WGC">Collingwood</span> would have included prose selections from the &#x201C;Account&#x201D; in the volume of prose that he projected as a companion to the <span class="date-1891">1891</span> <i>Poems</i> is unknown.
                   </p>
-                  <br></br>
+                  
                   <p>What engaged <span class="persName-WGC">Collingwood</span> about the &#x201C;Account&#x201D; was less its genre than its biographical record of the family tour. 
                                 He prefaces his edition of the work with a passage from <i>Praeterita</i> in which <span class="persName-JR">Ruskin</span> describes the family setting out on the 
                                 <a href="../notes/tour_of_1833.php" target="_blank" class="inactive">Tour of 1833</a> 
@@ -2468,7 +2848,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 the Library Edition, as <span class="persName-ETC">Cook</span> and <span class="persName-AW">Wedderburn</span> do not record anything like it 
                                 in their notes documenting placement of drawings, although at least one of these notes is muddled.)
                   </p>
-                  <br></br>
+                  
                   <p>For copytext, <span class="persName-WGC">Collingwood</span>&#x02BC;s first choice were texts of poems as fair&#x2010;copied by <span class="persName-JR">Ruskin</span> in <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">the MS IX fair copy</a>, 
                                 except for the three poems published in <span class="persName-JR">Ruskin</span>&#x02BC;s youth, in which cases he followed the revised, published texts. For &#x201C;Andernacht&#x201D; and &#x201C;St. Goar,&#x201D; 
                                 in addition to the main copytexts drawn from <a href="../showcase/account_of_a_tour_on_the_continent_fo.php" target="_blank" class="inactive">&#x201C;Fragments from a Metrical Journal&#x201D;</a>, 
@@ -2477,10 +2857,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                   </p>
                   
                </div>
-               <br></br>
+               
                <div id="PUBLICATION1903" class="sub-subsection">
                   <span class="head-sub-subsection">1903</span>
-                  <br></br>
+                  
                   <p>The <a href="../showcase/account_of_a_tour_on_the_continent_le.php" target="_blank" class="inactive">Library Edition version of the &#x201C;Account&#x201D;</a>, 
                                 the first published version to convey the composite genre of the <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>, 
                                 was edited by <span class="persName-ETC">E. T. Cook</span> and <span class="persName-AW">Alexander Wedderburn</span> for the second volume (<span class="date-1903">1903</span>) of the 
@@ -2492,7 +2872,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 with a prose passage (<a href="../showcase/chamouni_prose_msvii.php" target="_blank" class="inactive">&#x201C;Chamouni&#x201D;</a>) from 
                                 <a href="../apparatuses/apparatus_msvii.php" target="_blank" class="inactive">MS VII</a>.
                   </p>
-                  <br></br>
+                  
                   <p>The editors described <span class="persName-JR">Ruskin</span>&#x02BC;s illustrations in footnotes, and for reproduction they selected one page from the 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>, 
                                 which shows <span class="persName-JR">Ruskin</span>&#x02BC;s vignette copied from <span class="persName-JMWT">Turner</span> to head the first page of the poem, 
@@ -2504,7 +2884,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 The &#x201C;Jungfrau&#x201D; plate, however, is placed opposite &#x201C;The Alps from Schaffhausen&#x201D; in <span class="persName-WGC">Collingwood</span>&#x02BC;s edition, 
                                 and opposite &#x201C;Chamouni&#x201D; in the Library Edition.
                   </p>
-                  <br></br>
+                  
                   <p>In addition to these extensions meant to represent the composite genre of <span class="persName-JR">Ruskin</span>&#x02BC;s final version of the &#x201C;Account,&#x201D; 
                                 the Library Edition&#x02BC;s version is more complete than <span class="persName-WGC">Collingwood</span>&#x02BC;s in its selection of verse, 
                                 supplying additional lines for <a href="../showcase/the_summit_le.php" target="_blank" class="inactive">&#x201C;The Summit&#x201D;</a>, 
@@ -2521,7 +2901,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                </div>
                
             </div>
-            <br></br>
+            
             <div id="LINENUMBERING" class="subsection">
                <span class="head-subsection">Line Numbering in the Draft (MS IA, MS VIII)</span>
                
@@ -2532,7 +2912,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII draft sequence</a>. 
                             The numbering is listed in <a href="APPARATUSTABLE1">Table 1</a>.
                </p>
-               <br></br>
+               
                <p>In the two sheets comprising <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a>, 
                             the lines of the five poems are numbered continuously, 1&#x2013;173, without breaks between the separate poems. 
                             In <a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">MS IA, <i>g</i>.2</a>, 
@@ -2542,7 +2922,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             in a topographical sense for fair copy, this instance shows that the line count was valuable to <span class="persName-JR">Ruskin</span> in some way, but not necessarily in a way that 
                             can be lined up directly against the <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a>.
                </p>
-               <br></br>
+               
                <p>In the <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII draft sequence</a>, 
                             the line numbering takes up with line no. 506, applied to the mysterious poem, 
                             <a href="../showcase/oh_are_there_spirits_can_there_be_poem_msviii.php">&#x201C;Oh are there spirits, can there be&#x201D;</a>; 
@@ -2553,7 +2933,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             bears no relation to the topographical sequence of sections, since these are jumbled. 
                             Here, <span class="persName-JR">Ruskin</span> is mechanically numbering lines of poetry, for whatever use he made of the information.
                </p>
-               <br></br>
+               
                <p>Thus, <span class="persName-JR">Ruskin</span>&#x02BC;s purpose in the numbering the lines of poetry is not obvious. 
                             Doubtless, he needed a count in order to estimate space needed to fair&#x2010;copy lines; however, the system would not have helped him estimate space for prose, 
                             and the presence of the numbering in <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a> 
@@ -2562,7 +2942,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             tends to reinforce the evidence that <span class="persName-JR">Ruskin</span> composed draft of the &#x201C;Account&#x201D; in a straightforward sequence, 
                             as suggested by the regular, uncrowded appearance of the manuscripts&#x2014;despite the helter&#x2010;skelter leaping around the map in topographical subjects.
                </p>
-               <br></br>
+               
                <p>In the <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII draft sequence</a>, 
                             there may exist minor, localized confusions in sequence of composition, 
                             which are concealed by the apparently straightforward line numbering. For example, <span class="persName-JR">Ruskin</span> 
@@ -2582,7 +2962,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             (taken up in mid&#x2010;line, &#x201C;perambulating . . . tread on it softly&#x201D;) begins at the top of the next recto, 63r, 
                             and it is completed on 63v.
                </p>
-               <br></br>
+               
                <p>One inference is that <span class="persName-JR">Ruskin</span> wrapped the prose around the poem, 
                             already drafted in its place, on 62v. It is equally possible, however, that the sequence of composition was what it appears to be, 
                             but that the abrupt shifts between prose and poetry provide a clue about the process of fair&#x2010;copying 
@@ -2603,14 +2983,14 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <a href="../showcase/part_of_brussels_prose2_msviii.php">&#x201C;Part of Brussels&#x201D; &#x005B;part 2&#x005D;</a>, 
                             but changed his mind about the next word (making it &#x201C;perambulating,&#x201D; rather than &#x201C;traversing&#x201D;).
                </p>
-               <br></br>
+               
                <p>In this case, either scenario is supported by the evidence of the line numbering and the appearance of the draft. 
                             One conclusion that might be drawn from both scenarios is that fair&#x2010;copying was as important to 
                             <span class="persName-JR">Ruskin</span> as composition. Another inference is the unsettledness of his imagination, 
                             which could danced so mercurially from prose to verse, from the memory of <span class="placeName-BRUSSELS">Brussels</span> 
                             to evoking the <span class="placeName-BLACKFOREST">Black Forest</span>.
                </p>
-               <br></br>
+               
                <p>A hazard of interpreting <span class="persName-JR">Ruskin</span>&#x02BC;s line numbering in 
                             <a href="../showcase/account_of_a_tour_on_the_continent_msviii.php" target="_blank" class="inactive">MS VIII</a> is that it can lead to ambiguity about what verse 
                             he intended for the &#x201C;Account&#x201D; project. Following the <span class="date-1833-05">May 1833</span> birthday ode for his father, 
@@ -2636,7 +3016,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             the mountain scenery that may form the context of this lyric, with <a href="../showcase/source_of_the_arveron_prose_msviii.php">&#x201C;Source of the Arveron&#x201D;</a> 
                             falling next in sequence, which likewise evokes spiritual presences.
                </p>
-               <br></br>
+               
                <p>This discussion is provided as a demonstration of how <span class="persName-JR">Ruskin</span>&#x02BC;s line numbering might be used as evidence in establishing the contents and development of the &#x201C;Account.&#x201D; 
                             Use of this evidence always calls for caution, since the evidence is ambiguous in itself, and <span class="persName-JR">Ruskin</span> was sometimes inconsistent in how he applied the numbering. 
                             In <a href="../apparatuses/msviii_apparatus.php#LISTB2" target="_blank">MS VIII: Contents, <i>b</i>.2</a>, 
@@ -2648,7 +3028,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                
             </div> 
             
-            <br></br>
+            
          </div>
          
          <div id="DISCUSSION" class="section">
@@ -2670,7 +3050,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <a href="../showcase/account_of_a_tour_on_the_continent_msviii_contents.php" target="_blank" class="inactive">List of Proposed Additional Contents for Account of a Tour on the Continent</a>, 
                             and that he partly drafted in MS VII, MS VIII, and MS XI.
                </p>
-               <br></br>
+               
                <p>To see the editorial history as a steady advancement and simple expansion toward a single ideal text would imply, however, 
                             that each of <span class="persName-JR">Ruskin</span>&#x02BC;s editors projected the same ideal text. While all of these editors did presumably have access to sufficient evidence 
                             of <span class="persName-JR">Ruskin</span>&#x02BC;s largest ambitions for the project&#x2014;his composite&#x2010;genre version&#x2014;their respective treatments suggest conflicting views about a preferred ideal text. 
@@ -2680,7 +3060,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <span class="persName-JR">Ruskin</span>&#x02BC;s works), but this external factor does not entirely determine the editors&#x02BC; differing ideas about how to represent the &#x201C;Account&#x201D; project 
                             most effectively or&#x2014;what was for the earlier editors inseparable from representation of the text&#x2014;their influence over <span class="persName-JR">Ruskin</span>&#x02BC;s developing idea of authorship.
                </p>
-               <br></br>
+               
                <p>Initially, in terms of authorial intention and audience, and therefore of perceived ideal text, <span class="persName-JR">Ruskin</span> and his editors worked at cross purposes.
                             In the study of modern manuscripts, Donald Reiman has argued for the importance of distinguishing between a manuscript&#x02BC;s status as 
                             <i>public</i>, <i>private</i>, and <i>confidential</i>&#x2014;a distinction that depends, &#x201C;not &#x005B;on&#x005D; its degree of 
@@ -2705,7 +3085,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1, version</a>, 
                             which was a private collaboration with his father.
                </p>
-               <br></br>
+               
                <p>In editing poems from the &#x201C;Account&#x201D; as <a href="../showcase/account_of_a_tour_on_the_continent_fo.php" target="_blank" class="inactive">&#x201C;Fragments from a Metrical Journal&#x201D;</a>, 
                             <span class="persName-TP">Pringle</span> replaced <span class="persName-JR">Ruskin</span>&#x02BC;s imitation with the actual conditions and rhetoric of a public production, while creating an illusion of the original work 
                             as less confidential than private in Reiman&#x02BC;s terms. A &#x201C;journal&#x201D; belonging to &#x201C;J.R.&#x201D; seems mysteriously private 
@@ -2722,7 +3102,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             in their published versions. What <span class="persName-JR">Ruskin</span> had produced as a confidential, imitatively &#x201C;public&#x201D; manuscript in the 
                             <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a> recedes&#x2014;or seems to recede&#x2014;into the privileged knowledge of the editor.
                </p>
-               <br></br>
+               
                <p>This sense of the editor as holding insider&#x02BC;s knowledge was enhanced by the publication of 
                             <a href="../showcase/ehrenbreitstein_poem_msix.php" target="_blank" class="inactive">&#x201C;Ehrenbreitstein&#x201D;</a>  
                             as <a href="../showcase/ehrenbreitstein_poem_1850.php" target="_blank" class="inactive">&#x201C;Ehrenbreitstein: Fragment from a Metrical Journal&#x201D;</a>  
@@ -2748,7 +3128,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             in a Single Instance &#x005B;i.e., of selections included in the anthology&#x005D;. It is only <u>denied</u> the public&#x201D; 
                             (Durham, <span class="date-1850-03-24">24 March 1850</span> &#x005B;MSL 003/004/096&#x005D;, in <a href="../bibiliography/bibliography.php#MSL003-004" target="_blank" class="inactive">Letters from John James Ruskin to W. H. Harrison, 1838&#x2013;1853</a>).
                </p>
-               <br></br>
+               
                <p><span class="persName-WGC">W. G. Collingwood</span> situated himself in this tradition of the privileged editor, by virtue of his decision to restrict his <span class="date-1891">1891</span> edition to poetry, 
                             reserving an edition of early prose for a separate volume (see <a href="../notes/poems_1850_note.php" target="_blank" class="inactive">Ruskin, <i>Poems</i> &#x005B;1850&#x005D;</a>). 
                             Now, the audience for the &#x201C;Account&#x201D; was again public, but inflected by the culture of rare book collecting, which created a new audience of eager and competitive consumers 
@@ -2765,7 +3145,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             the manuscript that would have supplied some authorization for such a version&#x2014;the all&#x2010;verse, and perhaps more private collaboration between <span class="persName-JR">Ruskin</span> and his father, 
                             <a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">MS IA, <i>g</i>.1</a>&#x2014;was unknown to <span class="persName-WGC">Collingwood</span>.
                </p>
-               <br></br>
+               
                <p><span class="persName-WGC">Collingwood</span>&#x02BC;s version therefore was a step toward an ideal text of <span class="persName-JR">Ruskin</span>&#x02BC;s original intentions for the &#x201C;Account&#x201D; only in a limited sense. 
                             As if jealous even of the public dimension that he afforded the work by constructing it as a tour poem illustrative of <i>Praeterita</i>, 
                             <span class="persName-WGC">Collingwood</span> substituted a new narrative in his <span class="date-1894">1894</span> biography, 
@@ -2784,7 +3164,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                </p>
                
             </div>
-            <br></br>
+            
             
             <div id="ITINERARY" class="subsection">
                <span class="head-subsection">Itinerary and Tourism</span>
@@ -2797,7 +3177,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                </p>
                
             </div>
-            <br></br>
+            
             
             <div id="SOURCES" class="subsection">
                <span class="head-subsection">Sources and Influences</span>
@@ -2813,7 +3193,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             (<a href="../bibiliography/bibliography.php#JRWORKSLE" target="_blank" class="inactive">Ruskin, <i>Works</i></a>, 39:79; and see 
                             <a href="../bibiliography/bibliography.php#ROGERSITALY1830" target="_blank" class="inactive">Rogers, <i>Italy</i> &#x005B;1830&#x005D;</a>).
                </p>
-               <br></br>
+               
                <p>A second influence, according to <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span>, was the family&#x02BC;s acquisition in <span class="date-1833-04">April 1833</span> 
                             of <a href="../bibiliography/bibliography.php#PROUTSKETCHES" target="_blank" class="inactive"><span class="title-book-PROUTSKETCHES"><i>Facsimiles of Sketches Made in Flanders and Germany</i></span></a> 
                             by <a href="../notes/prout_samuel_note.php" target="_blank">Samuel Prout (1783&#x2013;1852)</a>: 
@@ -2832,7 +3212,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             that <span class="persName-SP">Prout</span> helped to orient the family to the north of Europe, as <span class="persName-SR">Rogers</span> oriented them to the southern region of the Continent 
                             (see ).
                </p>
-               <br></br>
+               
                <p>While these two publications of course did not hold exclusive sway over either the Ruskins&#x02BC; tour itinerary or <span class="persName-JR">Ruskin</span>&#x02BC;s embodiment of their experiences in the <span class="title-JRACCOUNTTOUR">&#x201C;Account&#x201D;</span>, 
                             <span class="persName-SR">Rogers</span>&#x02BC;s and <span class="persName-SP">Prout</span>&#x02BC;s books did play an important and representative role in <span class="persName-JR">Ruskin</span>&#x02BC;s conceptualization of his family&#x02BC;s northern and southern destinations, 
                             and in the interplay of tourism and the materiality of travel writing and publication in the <span class="date-1830-1839">1830s</span>. 
@@ -2854,7 +3234,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <span class="persName-SR">Rogers</span>&#x02BC;s poem gained popular acclaim solely by means of the <span class="date-1830">1830</span> edition&#x02BC;s graphic enhancements 
                             (see <a href="../notes/samuel_rogers_note.php" target="_blank" class="inactive">Samuel Rogers (1763&#x2013;1855)</a>).
                </p>
-               <b></br>
+               
                <p><span class="persName-JR">Ruskin</span>&#x02BC;s <span class="title-JRACCOUNTTOUR">&#x201C;Account&#x201D;</span> underwent a development parallel to that of <span class="persName-SR">Rogers</span>&#x02BC;s work, from a travelogue written solely in verse and in an eighteenth&#x2010;century manner 
                             of topographical poetry, to an illustrated composite&#x2010;genre travel narrative typical of the steel&#x2010;engraved landscape <a href="../notes/annuals_note.php" target="_blank">annuals</a> 
                             of the <span class="date-1830-1839">1830s</span> (see <a href="#COMPPUB">Composition and Publication</a>). As remarked above, there is some ambiguity concerning when the Ruskin family 
@@ -2873,7 +3253,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             by heading the first page of each section with a landscape vignette, above the title, 
                             in order to situate the reader in a distinct place, and by closing each section with a figure vignette, as a tailpiece in order to caption some portion of the narrative.
                </p>
-               <br></br>
+               
                <p>In this arrangement of text and image, <span class="persName-JR">Ruskin</span> captured a notable innovation of the <span class="date-1830">1830</span> illustrated edition of <span class="title-poem-ROGERSITALY"><i>Italy</i></span>. 
                             <span class="persName-SR">Rogers</span> probably based his layout on the admired designs by 
                             <span class="persName-WBPUBLISHER">William Bulmer</span> (<span class="date-1757-1830">1757&#x2013;1830</span>) for his <span class="orgName-">Shakspeare Press</span>, 
@@ -2891,7 +3271,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             (<a href="../bibiliography/bibliography.php#POWELLTURNERSVIGNETTES" target="_blank" class="inactive">Powell, &#x201C;Turner&#x02BC;s Vignettes and the Making of Rogers&#x02BC; &#x2018;Italy&#x2019;&#x201D;</a>, 3). 
                             <span class="persName-JR">Ruskin</span> was attentive to this up&#x2010;to&#x2010;date innovation.
                </p>
-               <br></br>
+               
                <p>But <span class="persName-JR">Ruskin</span>&#x02BC;s fair&#x2010;copy version is not just an illustrated travel poem, but a composite&#x2010;genre travelogue, combining prose with verse and illustration. 
                             Although <span class="persName-SR">Rogers</span>&#x02BC;s <i>Italy</i> is subtitled <i>A Poem</i>, the author 
                             did include some prose&#x2014;brief essays and a tale&#x2014;in &#x201C;Part the Second&#x201D; (<span class="date-1828">1828</span>) of the work 
@@ -2907,7 +3287,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             While complementing the poems, <span class="persName-JR">Ruskin</span>&#x02BC;s prose pieces also contrast with his rather generalized, picturesque poetic views, by bringing them down to earth 
                             with first&#x2010;person, anecdotal and comedic commentary about specific locale.
                </p>
-               <br></br>
+               
                <p>By this arrangement, <span class="persName-JR">Ruskin</span> amplifies the pattern of text and illustration in the <span class="date-1830">1830</span> <i>Italy</i>, which typically consists of a landscape vignette 
                             after a drawing by <span class="persName-JMWT">Turner</span> as a header, above a poem&#x02BC;s title, and a figure vignette after a drawing by <span class="persName-TSP">Stothard</span> as a tailpiece. While in its present condition, 
                             the <a href="../showcase/account_of_a_tour_on_the_continent_msix.php" target="_blank" class="inactive">MS IX fair copy</a> is missing many drawings 
@@ -2918,7 +3298,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             and a figure drawing as tailpiece, but he varies the pattern somewhat (as does <span class="persName-SR">Rogers</span>) by occasionally heading a section or a prose piece 
                             with a more anecdotal, narrative vignette.
                </p>
-               <br></br>
+               
                <p>The most striking variation is the section on &#x201C;Aix la Chapelle,&#x201D; which begins with an imposing drawing 
                             in <span class="persName-SP">Prout</span>&#x02BC;s manner of the city&#x02BC;s cathedral, followed by the section heading, but which proceeds with a prose piece only, and no poem. 
                             At the end of the section, the manuscript shows a large gap, which may have been meant to be filled by a tailpiece, but which was more likely reserved 
@@ -2930,7 +3310,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             of the cathedral. Perhaps <span class="persName-JR">Ruskin</span> chose &#x201C;Aix la Chapelle&#x201D; as an exercise in condensation in order to signify the city&#x02BC;s pivotal geographical position 
                             at the juncture of <span class="placeName-BELGIUM">Belgium</span>, <span class="placeName-NETHERLANDS">Netherlands</span>, and <span class="placeName-GERMANY">Germany</span>, and the its distinctive, imperial status.
                </p>
-               <br></br>
+               
                <p>At the opposite end of the spectrum, <span class="persName-JR">Ruskin</span> carries out the principle of elaborating <span class="persName-SR">Rogers</span>&#x02BC;s pattern to its fullest in the sections on &#x201C;Andernacht,&#x201D; 
                             &#x201C;Ehrenbreitstein,&#x201D; and &#x201C;St. Goar.&#x201D; The outer sections of the trio work as contrasts&#x2014;the first, gothic in mode; and the third, domestic. Between them, 
                             &#x201C;Ehrenbreitstein&#x201D; plays with the topic of confluence, as the meeting point of the darkly gothic and of sunny domesticity, symbolized by the meeting point 
@@ -2938,7 +3318,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             Each of the sections is planned for the fullest complement of poetry, prose, and drawings; together, the three sections traverse an elaborate yet balanced 
                             range of topographical modes.
                </p>
-               <br></br>
+               
                <p>In his drawings imitating engravings, <span class="persName-JR">Ruskin</span> strives to harmonize his illustrations with text in the manner of <span class="persName-SR">Rogers</span>&#x02BC;s landscape illustrator, 
                             <a href="../notes/turner_j_m_w_note.php" target="_blank" class="inactive">J. M. W. Turner (1775&#x2013;1851)</a>, 
                             who exploited the potential of fine&#x2010;lined but durable steel engraving to allow indefinite borders of an engraving to melt into the white space of the paper, 
@@ -2951,7 +3331,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             as compared with the fairy world of light and exotic landscape revealed by the exquisite intaglio of <span class="persName-JMWT">Turner</span>&#x02BC;s vignettes. As the largest of <span class="persName-JR">Ruskin</span>&#x02BC;s drawings 
                             for the &#x201C;Account,&#x201D; set broadside and filling an entire page of the MS IX notebook, the &#x201C;Liege&#x201D; copy comments also on the scale 
                             of <span class="persName-SP">Prout</span>&#x02BC;s folio&#x2010;sized <i>Facsimiles</i> as a contrast with the miniature vignette illustrations for <span class="persName-SR">Rogers</span>&#x02BC;s <i>Italy</i>.
-               </p><br></br>
+               </p>
                
                <p>In <span class="persName-JR">Ruskin</span>&#x02BC;s liveliness of response to the material world of art production and reproduction that guided early Victorian picturesque travel, his achievement 
                             in the &#x201C;Account&#x201D; poses possibilities that are neglected by interpretations that insist on the narrow constraints and neuroticism of <span class="persName-JR">Ruskin</span>&#x02BC;s early self&#x2010;instruction 
@@ -2978,7 +3358,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             a full page, in keeping with the prose description of a monumental cathedral as &#x201C;a noble, a beautiful, a sublime thing&#x201D; 
                             (<a href="../showcase/aix_la_chapelle_prose_msix.php">&#x201C;Aix la Chapelle&#x201D;</a>).
                </p>
-               <br></br>
+               
                <p>Viewed in this way, the &#x201C;Account&#x201D; seems less the &#x201C;unfinished folly&#x201D; that <span class="persName-JR">Ruskin</span> 
                             condemned in <i>Praeterita</i> (<a href="../bibiliography/bibliography.php#JRWORKSLE" target="_blank" class="inactive">Ruskin, <i>Works</i></a>, 35:81), 
                             than a project that had yielded as much creative potential as <span class="persName-JR">Ruskin</span> could teach himself, 
@@ -2986,11 +3366,11 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             The project propelled him forward into active participation as the author, &#x201C;J.R.,&#x201D; in the material culture of ekphrastic and topographical 
                             illustrated publication.
                </p>
-               <br></br>
+               
                
                <div id="PROUT" class="sub-subsection">
                   <span class="head-sub-subsection">Views of Northern Europe in <span class="persName-SP">Prout</span> and Other Literary and Artistic Sources</span>
-                  <br></br>
+                  
                   <p>For British travelers in the <span class="date-1820-1839">1820s&#x2013;30s</span>, emergent developments in touristic experience were perhaps most vivid in new and less familiar routes 
                             opening up in northern Europe alongside the well&#x2010;worn path of the Grand Tour to <span class="placeName-ITALY">Italy</span>. 
                             Apart from the attraction of <span class="placeName-WATERLOO">Waterloo</span> Field, travel in the Pas&#x2010;de&#x2010;Calais and <span class="placeName-FLANDERS">Flanders</span> remained 
@@ -3014,7 +3394,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                             <span class="persName-SP">Prout</span> was a foundational influence on artists seeking architectural picturesque subjects in these regions
                             (<a href="../bibiliography/bibliography.php#LOCKETTPROUT" target="_blank" class="inactive">Lockett, <i>Samuel Prout</i></a>, 76).
                   </p>
-                  <br></br>
+                  
                   <p>Since <span class="persName-SP">Prout</span> had established his lead in depicting the market towns of the Low Countries and <span class="placeName-GERMANY">Germany</span> 
                             since the <span class="date-1820-1829">1820s</span>, his <i>Facsimiles</i> of <span class="date-1833">1833</span> 
                             may well have served as a kind of guidebook for the Ruskins (although of course they could not take a folio volume with them). <span class="persName-SP">Prout</span>&#x02BC;s views would have 
@@ -3030,7 +3410,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                   
                </div>
                
-               <br></br>
+               
                <div id="ALPS" class="sub-subsection">
                   <span class="head-sub-subsection">Views of the <span class="geogName-ALPS">Alps</span>, Northern <span class="placeName-ITALY">Italy</span>, and <span class="placeName-SWITZERLAND">Switzerland</span>, in Literary and Artistic Sources</span>
                   
@@ -3038,10 +3418,10 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                   
                </div>
                
-               <br></br>
+               
                <div id="MENTORS" class="sub-subsection">
                   <span class="head-sub-subsection">Mentors</span>
-                  <br></br>
+                  
                   <p>In forming the persona <span class="persName-pen_name-JR">J.R.</span>, <span class="persName-JR">Ruskin</span> was influenced not only by literary and artistic sources, 
                                 but also by living poets and artists 
                                 whom he was fortunate to meet or correspond with during his conceptualization and composition of the &#x201C;Account.&#x201D; These contacts became especially important 
@@ -3052,7 +3432,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 <a href="../notes/hogg_james_note.php" target="_blank">James Hogg (ca. 1770&#x2013;1835)</a>. <span class="persName-JR">Ruskin</span> also had some contact at this time with 
                                 <a href="../notes/loudon_j_c_note.php" target="_blank" class="inactive">John Claudius Loudon (1783&#x2013;1843)</a>.
                   </p>
-                  <br></br>
+                  
                   <p>The personae of <span class="persName-JH">Hogg</span> and <span class="persName-SR">Rogers</span> each exhibited multiple and even contradictory sides, and the Ruskins must have been selective 
                                 about what aspects of these public figures they hoped to cultivate in the patronage of their precocious son. 
                                 Respecting <span class="persName-JH">Hogg</span>, the Ruskins thought of him in his role as the <span class="persName-JH">Ettrick Shepherd</span>, who was romantically imagined as having received his call to poetry 
@@ -3064,7 +3444,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 but <span class="persName-JR">Ruskin</span>&#x02BC;s parents would hardly have considered such a persona as an appropriate model 
                                 for <span class="persName-JR">Ruskin</span>&#x02BC;s solitary and decorous authorship.
                   </p>
-                  <br></br>
+                  
                   <p>When the Ruskins first met <span class="persName-JH">Hogg</span> personally in <span class="date-1832">1832</span>, he was undertaking his first visit to the metropolis of <span class="placeName-LONDON">London</span>, 
                                 where was lionized by <span class="placeName-LONDON">London</span> society. <span class="persName-JH">Hogg</span>&#x02BC;s introduction to the Ruskins came by way of the community of expatriate Scottish literati in <span class="placeName-LONDON">London</span> 
                                 who surrounded the publishing firms of <span class="orgName-MURRAY">John Murray</span> and <span class="orgName-SMITHELDER">Smith, Elder</span>. The latter, in particular, as the publisher of 
@@ -3076,7 +3456,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 who was the first to present <span class="persName-JR">Ruskin</span> with a copy of <i>Friendship&#x02BC;s Offering</i> (probably the <span class="date-1829">1829</span> 
                                 or <span class="date-1830">1830</span> volume, both of which contained contributions by <span class="persName-JH">Hogg</span>).
                   </p>
-                  <br></br>
+                  
                   <p><span class="persName-SR">Rogers</span>, in sharp contrast with <span class="persName-JH">Hogg</span>, was the urbane &#x201C;man of taste,&#x201D; whose townhouse in <span class="placeName-STJAMESPLACE">St. James Square</span> 
                                 was a showplace of exquisitely curated Regency neoclassicism, and the scene of his famous breakfasts in which <span class="persName-SR">Rogers</span> acted the part of social arbiter 
                                 of the current <span class="placeName-LONDON">London</span> artistic and literary scene. In his most positive light, <span class="persName-SR">Rogers</span> might have appeared to the Ruskins as a splendid embodiment 
@@ -3090,7 +3470,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 The unattractive side of <span class="persName-SR">Rogers</span> was his notoriously acid wit and his worldliness at a time when middle&#x2010;class Evangelical earnestness 
                                 was turning the tide on the influence of Regency &#x201C;men of taste.&#x201D;
                   </p>
-                  <br></br>
+                  
                   <p>The two writers also differed profoundly in taste. <span class="persName-SR">Rogers</span> was so committed to his neoclassicism that <span class="persName-JMWT">Turner</span> 
                                 reined in his apocalyptic manner typical of his other works of the period in favor of a style that would harmonize with <span class="persName-SR">Rogers</span>&#x02BC;s restraint, 
                                 by using less dramatic perspective in his vignette designs for <i>Italy</i> 
@@ -3102,7 +3482,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 by <span class="persName-JJR">John James Ruskin</span> and others, <span class="persName-JH">Hogg</span>&#x02BC;s deluxe edition was never produced owing to disruptions in trade caused by Reform agitation in <span class="date-1832">1832</span>; 
                                 see <a href="../bibiliography/bibliography.php#OHALLORANILLUSTRATIONS" target="_blank" class="inactive">O&#x02BC;Halloran, &#x201C;Illustrations to <i>The Queen&#x02BC;s Wake</i>&#x201D;</a>, c&#x2010;civ.)
                   </p>
-                  <br></br>
+                  
                   <p>Of the two relationships, the Ruskins&#x02BC; contact with <span class="persName-JH">Hogg</span> is the best documented 
                                 (see <a href="../notes/hogg_james_note.php" target="_blank">James Hogg (ca. 1770&#x2013;1835)</a>). 
                                 Their apparent preference for the <span class="persName-JH">Ettrick Shepherd</span>&#x02BC;s advice about <span class="persName-JR">Ruskin</span>&#x02BC;s future as a poet, when the youth was laboring over the 
@@ -3120,7 +3500,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 suggesting that he trusted the humble Scottish &#x201C;shepherd&#x201D; over the urbane man of taste 
                                 (<a href="../bibiliography/bibliography.php#GARDENMEMORIALS" target="_blank" class="inactive">Garden, ed., <i>Memorials of James Hogg</i></a>, 274).
                   </p>
-                  <br></br>
+                  
                   <p>Despite <span class="persName-JJR">John James</span>&#x02BC;s sentiments, both <span class="persName-SR">Rogers</span>&#x02BC;s successes and <span class="persName-JH">Hogg</span>&#x02BC;s disappointments were endemic to a period of transition between publishing in the age of 
                                 <span class="persName-WS">Scott</span> and the more entrepreneurial and innovative, yet also volatile and confusing print culture 
                                 in the age of <span class="persName-CJHD">Dickens</span>. In a time when critical discourse commonly bemoaned the decline of poetry in unpropitious circumstances 
@@ -3134,7 +3514,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 and for his appreciation of the fine arts&#x2014;particularly modern painting, for its connection with literature and its accessibility to ordinary people&#x2014;see 
                                 <a href="../bibiliography/bibliography.php#HUGHESHOGGARTANNUALS" target="_blank" class="inactive">Hughes, &#x201C;Hogg, Art, and the Annuals&#x201D;</a>).
                   </p>
-                  <br></br>
+                  
                   <p>The sole anecdote to survive concerning <span class="persName-JR">Ruskin</span>&#x02BC;s audience with <span class="persName-SR">Rogers</span> can be read in terms of commonalities shared by these mentors 
                                 in the literary and artistic culture of the <span class="date-1830-1839">1830s</span>. We have no contemporary documentation of <span class="persName-JR">Ruskin</span>&#x02BC;s introduction to <span class="persName-SR">Rogers</span> under <span class="persName-TP">Pringle</span>&#x02BC;s wing, 
                                 other than evidence of <span class="persName-TP">Pringle</span>&#x02BC;s regular entr&#x00E9;e to <span class="placeName-STJAMESPLACE">St. James Place</span> 
@@ -3151,7 +3531,7 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 it is a reasonable guess that <span class="persName-TP">Pringle</span> secured an audience on the strength of the youth&#x02BC;s precocious achievement in the 
                                 <a href="../showcase/account_of_a_tour_on_the_continent_msix.xml" target="_blank" class="inactive">MS IX fair copy of the &#x201C;Account&#x201D;</a>.)
                   </p>
-                  <br></br>
+                  
                   <p>In the mentoring of <span class="persName-pen_name-JR">J.R.</span>, perhaps the most important qualification is indicated by a word dropped in the only 
                                 mention of a publication by <span class="persName-JR">John</span> to survive in the family correspondence of <span class="date-1834">1834</span>. In a verse letter to his father dated <span class="date-1834-03-10">10 March 1834</span>, 
                                 <span class="persName-JR">Ruskin</span> mentions&#x2014;not <span class="persName-TP">Pringle</span> and <i>Friendship&#x02BC;s Offering</i>&#x2014;but 
@@ -3174,6 +3554,8 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
                                 inviting amateurs to contribute to forums such as the 
                                 <a href="../notes/magazine_of_natural_history_note.php" target="_blank" class="inactive"><i>Magazine of Natural History</i></a> 
                                 and trade &#x201C;lucubrations&#x201D; that did not necessarily depend on professional status.
+                                <br></br>
+                                <br></br>
                   </p>
                   
                   
@@ -3186,14 +3568,8 @@ $content = '<div id="top" class="title-apparatus">Account of a Tour on the Conti
          </div>
          
       </div>
-          <div id="top_button"><a href="#top" alt="Top Button" title="Go Back to the Top">&#x2303;</a></div>   </body>
+      <?php include("top_button.inc.php"); ?>
+   </body>
    
    
-
-</p>';
-
-
-
-
-include 'Template.php';
-?>
+</html>
