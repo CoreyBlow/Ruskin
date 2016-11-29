@@ -405,23 +405,7 @@ for (i = 0; i < acc.length; i++) {
                                 
                                 
                                 
-            <p><a href="../showcase/account_of_a_tour_on_the_continent_msia_g1.php" target="_blank" class="inactive">Account of a Tour on the Continent (MS IA g1)</a>
-               
-               <ul>
-                  
-                  <li><a href="../showcase/calais_poem_msia_g1.php">&#x201C;Calais&#x201D; &#x005B;poem&#x005D;</a></li>
-                  
-                  <li><a href="../showcase/cassel_poem_msia_g1.php">&#x005B;&#x201C;Cassel&#x201D;&#x005D; &#x005B;poem&#x005D;</a></li>
-                  
-                  <li><a href="../showcase/lille_poem_msia_g1.php">&#x201C;Lille&#x201D; &#x005B;poem&#x005D;</a></li>
-                  
-                  <li><a href="../showcase/brussels_poem_msia_g1.php">&#x201C;Brussels&#x201D; &#x005B;poem&#x005D;</a></li>
-                  
-                  <li><a href="../showcase/the_meuse_poem_msia_g1.php">&#x201C;The Meuse&#x201D; &#x005B;&#x201C;Cassel,&#x201D; poem&#x005D;</a></li>
-                  
-               </ul>
-               				
-            </p>             
+                   
             
             <p><a href="../showcase/account_of_a_tour_on_the_continent_msia_g2.php" target="_blank" class="inactive">Account of a Tour on the Continent (MS IA g2)</a>
                
