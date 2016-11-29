@@ -4,19 +4,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
 <link href="witness_styles.css" rel="stylesheet" type="text/css" />
 <link rel="icon" 
 	type="image/png" 
 	href="../images/ruskin_icon.png">
 <title>Now Showcasing: "On the Rainbow: In Blank Verse" (MS I)</title>
-<script src="jquery-3.1.1.js"</script>
+
+<script src="jquery-3.1.1.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
+$.fn.popover.Constructor.DEFAULTS.placement = 'top';
 (function($){
  
     $(document).ready(function(){
             $('[data-toggle="popover"]').popover(); 
+            container: '.popover'
     });
 
 })(jQuery);
@@ -482,30 +485,45 @@ $(document).ready(function(){
    <div class="pageNum-top-right">105</div><br/> 
    <span class="lg-stanza">
       <span class="l"><span class="space" style="padding-left:0.4em">Â?</span><span class="caps">T</span><span class="smallcaps">he</span> rainbows beauties<div class="runover" style="left:1.6em">are my joy.</div></span><br/>
-      <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>in rains where rainbows are the be<span class="g-insertion">/</span><div class="add-above" style="left:14.0em">,</div><span class="glosses"><a href="#" data-toggle="popover" title="Line 1" rel="popover" data-content="gloss content goes here" data-trigger="focus"><sup>1</sup></a></span></span><br/>
-      <span class="l">and shoot <span class="subst-del"><span class="gap" style="padding-left:0.4em">Â?</span></span><span class="subst-add-overwriting">t</span>hose rays of light to me<span class="g-insertion">/</span><div class="add-above" style="left:14.0em">,</div><span class="glosses"><a href="../glosses/on_the_rainbow_glosses2.php#GLYPHINSERTION2" target="_blank">2</a></span></span><br/>
+      <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>in rains where rainbows are the be<span class="g-insertion">/</span><div class="add-above" style="left:14.0em">,</div><span class="glosses"><a href="#" data-toggle="popover" title="Line 2&#x2014;end" rel="popover" data-placement="top" data-content="An insertion glyph points to a comma above the line; 
+                    see <a href='../notes/editorial_rationale_note.php#DELETIONANDADDITION' target='_blank'>Editorial and Encoding Rationale and Methodology: Deletion and Addition</a>." data-html="sssss" data-trigger="focus"><sup>1</sup></a></span></span><br/>
+      <span class="l">and shoot <span class="subst-del"><span class="gap" style="padding-left:0.4em">Â?</span></span><span class="subst-add-overwriting">t</span>hose rays of light to me<span class="g-insertion">/</span><div class="add-above" style="left:14.0em">,</div><span class="glosses"><a href="#" data-toggle="popover" title="Line 3&#x2014;end" rel="popover" data-placement="top" data-content="An insertion glyph points to a comma above the line; 
+                    see <a href='../notes/editorial_rationale_note.php#DELETIONANDADDITION2' target='_blank'>Editorial and Encoding Rationale and Methodology: Deletion and Addition</a>." data-html="sssss" data-trigger="focus"><sup>2</sup></a></span></span><br/>
       <span class="l">whe<span class="subst-del">n<span class="space" style="padding-left:0.4em">Â?</span></span><span class="subst-add-overwriting">re</span>all the beauties of them are,</span><br/>
-      <span class="l">and those that see them all<span class="subst-del">r</span><span class="subst-add-overwriting"><span class="space" style="padding-left:0.4em">Â?</span>r</span>eflect.<span class="glosses"><a href="../glosses/on_the_rainbow_glosses2.php#ERASUREBYBOLD1" target="_blank">3</a></span><span class="glosses"><a href="../glosses/on_the_rainbow_glosses2.php#PAUSEPERIOD" target="_blank">4</a></span></span><br/>
+      <span class="l">and those that see them all<span class="subst-del">r</span><span class="subst-add-overwriting"><span class="space" style="padding-left:0.4em">Â?</span>r</span>eflect.<span class="glosses"><a href="#" data-toggle="popover" title="&#x201C;all reflect&#x201D;" rel="popover" data-placement="top" data-content="Because <span class='persName-JR'>Ruskin</span> wrote the <i>r</i> too close to the preceding word, 
+                    he erased it by printing a second <i>r</i> with heavier strokes, as if in boldface; 
+                    see <a href='../notes/editorial_rationale_note.php#DELETIONANDADDITION' target='_blank'>Editorial and Encoding Rationale and Methodology: Deletion and Addition</a>." data-html="sssss" data-trigger="focus"><sup>3</sup></a></span><span class="glosses"><a href="#" data-toggle="popover" title="Line 5&#x2014;end" rel="popover" data-placement="top" data-content="Since <span class='persName-JR'>Ruskin</span> is so definite about placing commas at the ends of line close to the preceding word, 
+                    he erased it by printing a second <i>r</i> with heavier strokes, as if in boldface; 
+                    see <a href='../notes/editorial_rationale_note.php#DELETIONANDADDITION' target='_blank'>Editorial and Encoding Rationale and Methodology: Deletion and Additions 2&#x2013;4, 
+                    he presumably does not intend the punctuation closing line 5 as a pause&#x2010;period but as a terminal period, despite the lack of an independent clause in lines 2&#x2013;4; 
+                    see <a href='../notes/editorial_rationale_note.php#COMMA' target='_blank'>Editorial and Encoding Rationale and Methodology: Commas, Periods, and Other Punctuation</a>. 
+                    Note the decided use of terminal periods in lines 1 and 8" data-html="sssss" data-trigger="focus"><sup>4</sup></a></span></span><br/>
       <span class="l">and those that have the colours best<span class="unclear-faded-CWB">,</span></span><br/>
       <span class="l">show <span class="overwriting">m</span>e those rays of light that <div class="runover" style="left:2.8em">all</div></span><br/>
-      <span class="l">reflect upon. <span class="caps-doubleletter">A</span>nd<span class="glosses"><a href="../glosses/on_the_rainbow_glosses2.php#DOUBLELETTER" target="_blank">5</a></span> all that know</span><br/>
+      <span class="l">reflect upon. <span class="caps-doubleletter">A</span>nd<span class="glosses"><a href="#" data-toggle="popover" title="&#x201C;And&#x201D;&#x2014;" rel="popover" data-placement="top" data-content="Double-letter capital; see <a href='../notes/editorial_rationale_note.php#HAND' target='_blank'>Editorial and Encoding Rationale and Methodology: Handwriting and Special Characters</a>." data-html="sssss" data-trigger="focus"><sup>5</sup></a></span> all that know</span><br/>
       <span class="l">about the rainbow will reflect<div class="runover" style="left:3.2em">those rays</div></span><br/>
       <span class="l">of light that come towards them<div class="runover" style="left:4.4em">always are</div></span><br/>
       <span class="l">The ornament of all the sky</span><br/>
-      <span class="l">but those that do<span class="subst-del">n</span><span class="subst-add-overwriting"><span class="space" style="padding-left:0.4em">Â?</span>n</span>ot<span class="glosses"><a href="../glosses/on_the_rainbow_glosses2.php#ERASUREBYBOLD2" target="_blank">6</a></span> know about that ligh<span class="unclear-runoff-TJI">t</span></span><br/>
+      <span class="l">but those that do<span class="subst-del">n</span><span class="subst-add-overwriting"><span class="space" style="padding-left:0.4em">Â?</span>n</span>ot<span class="glosses"><a href="#" data-toggle="popover" title="<i>Line 12</i>" rel="popover" data-placement="top" data-content="Because <span class='persName-JR'>Ruskin</span> wrote the <i>n</i> too close to the preceding word, 
+                    he erased it by printing a second <i>n</i> with heavier strokes, as if in boldface; 
+                    see <a href='../notes/editorial_rationale_note.php#DELETIONANDADDITION' target='_blank'>Editorial and Encoding Rationale and Methodology: Deletion and Addition</a>." data-html="sssss" data-trigger="focus"><sup>6</sup></a></span> know about that ligh<span class="unclear-runoff-TJI">t</span></span><br/>
       <div id="1229148v" class="pb"></div>
       <div class="pageNum-top"><span class="space" style="padding-left:13.2em">Â?</span>106</div><br/>
       <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>reflect not on it. and in all that ligh<span class="unclear-gutter-TJI">t</span></span><br/>
-      <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>not one of<div class="add-above" style="left:3.6em">all</div><span class="glosses"><a href="../glosses/on_the_rainbow_glosses2.php#LINE14ADDITION" target="_blank">7</a></span> the colours do they know</span><br/>
+      <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>not one of<div class="add-above" style="left:3.6em">all</div><span class="glosses"><a href="#" data-toggle="popover" title="Line 14" rel="popover" data-placement="top" data-content="While the word <i>all</i> has the appearance of a runover, it is positioned very close above line 14, and written unusually small; 
+                    and since the word makes clearer semantic sense as part of the prepositional phrase in line 14 than as part of the prepositional phrase in line 13, 
+                    we interpret it as an addition to line 14." data-html="sssss" data-trigger="focus"><sup>7</sup></a></a></span> the colours do they know</span><br/>
       <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>but all that see it justly think upon</span><br/>
-      <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>The maker of it<span class="space" style="padding-left:0.8em">Â?</span><span class="glosses"><a href="../glosses/on_the_rainbow_glosses2.php#EXTRASPACE1" target="_blank">8</a></span>justly is not he</span><br/>
+      <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>The maker of it<span class="space" style="padding-left:0.8em">Â?</span><span class="glosses"><a href="#" data-toggle="popover" title="Line 16" rel="popover" data-placement="top" data-content="The extra space following <i>it</i> appears to function as terminal punctuation; 
+                    see <a href='../notes/editorial_rationale_note.php#COMMA' target='_blank'>Editorial and Encoding Rationale and Methodology: Commas, Periods, and Other Punctuation</a>." data-html="sssss" data-trigger="focus"><sup>8</sup></a></span>justly is not he</span><br/>
       <span class="l"><span class="space" style="padding-left:0.4em">Â?</span>best of the rainbows<span class="subst-del"><span class="space" style="padding-left:0.4em">Â?</span><span class="unclear-TJI">b</span></span><span class="subst-add-overwriting">.B</span>ut what light<div class="runover" style="left:4.8em">is that</div></span><br/>
       <span class="l"><span class="space" style="padding-left:0.8em">Â?</span>which to us from that god does flo<span class="unclear-gutter-TJI">w.</span></span><br/>
       <span class="l"><span class="space" style="padding-left:0.8em">Â?</span>all <span class="overwriting">o</span>f the men that from that god<div class="runover" style="left:3.6em">see light</div></span><br/>
       <span class="l"><span class="space" style="padding-left:1.2em">Â?</span>Will say. what light is this</span><br/>
       <span class="l"><span class="space" style="padding-left:1.2em">Â?</span>br<span class="overwriting">o</span>wn is the <span class="overwriting">r</span>ainbow when<div class="runover" style="left:1.2em"><span class="overwriting">c</span>ompared with this</div></span><br/>
       <span class="l"><span class="space" style="padding-left:1.2em">Â?</span>and all the men that see it all <div class="runover" style="left:4.8em">re<span class="overwriting">f</span>lect</div></span><br/>
-      <span class="l"><span class="del"><span class="space" style="padding-left:1.6em">Â?</span></span><span class="add">upon</span> The<span class="space" style="padding-left:1.2em">Â?</span><span class="glosses"><a href="../glosses/on_the_rainbow_glosses2.php#EXTRASPACE2" target="_blank">9</a></span>beauties of the rainbow</span><br/>
+      <span class="l"><span class="del"><span class="space" style="padding-left:1.6em">Â?</span></span><span class="add">upon</span> The<span class="space" style="padding-left:1.2em">Â?</span><span class="glosses"><a href="#" data-toggle="popover" title="Line 23" rel="popover" data-placement="top" data-content="The extra space following <i>The</i>, along with the appearance of <i>upon</i> 
+                    as an addition to the front of the line, suggests that Ruskin was playing with the sense of <i>reflect</i> in line 22 as both a transitive and intransitive verb." data-html="sssss" data-trigger="focus"><sup>9</sup></a></span>beauties of the rainbow</span><br/>
       </span>
   </div>
 </div>

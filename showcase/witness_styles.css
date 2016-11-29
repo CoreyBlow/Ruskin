@@ -459,7 +459,20 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 		font-variant: small-caps;
 		font-weight: bold;
 		}
-
+        .popover{
+                display:block !important;
+                max-width: 400px!important;
+                width:auto;
+                }        
+        
+        .popover-title {
+               
+                font-size: 15px;
+                }
+        .popover-content {
+                
+                font-size: 12px;
+}
 	/* W e b a p p */
 
 	#main {
